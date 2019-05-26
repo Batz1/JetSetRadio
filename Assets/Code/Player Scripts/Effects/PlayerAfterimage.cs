@@ -8,7 +8,7 @@ public class PlayerAfterimage : MonoBehaviour
     ParticleSystem afterimage;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         afterimage = GetComponent<ParticleSystem>();
     }

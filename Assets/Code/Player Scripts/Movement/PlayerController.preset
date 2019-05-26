@@ -58,7 +58,11 @@ Preset:
     value: 6
     objectReference: {fileID: 0}
   - target: {fileID: 0}
-    propertyPath: speedCheck
+    propertyPath: xVelocityCheck
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: yVelocityCheck
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
@@ -76,6 +80,10 @@ Preset:
   - target: {fileID: 0}
     propertyPath: jumpPressTime
     value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jumpPressRemember
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: upForce
@@ -110,6 +118,10 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: collidedWithAnything
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: canWallJumpL
     value: 0
     objectReference: {fileID: 0}
@@ -118,7 +130,15 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: isSameWall
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: canDashDown
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hasDashedDown
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}

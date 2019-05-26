@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject playerSprite;
     public GroundCheck gCheck;
+    public PlayerInput pInput;
 
     public Collider2D wallBumpL;
     public Collider2D wallBumpR;
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Time To Remember Jump Input")]
     public float jumpPressTime = 0.2f;
-    float jumpPressRemember;
+    public float jumpPressRemember;
 
     [Header("Dash Forces")]
     public float upForce;
@@ -53,21 +54,29 @@ public class PlayerController : MonoBehaviour
     [Header("Jump Booleans")]
     public bool canJump = true;
     public bool canDoubleJump = false;
+    public bool collidedWithAnything = false;
+    [HideInInspector] public bool hasDoubleJumped = false;
 
     [Header("Wall Jump Booleans")]
     public bool canWallJumpL = false;
     public bool canWallJumpR = false;
-    bool isSameWall = false;
+    public bool isSameWall = false;
 
     [Header("Dash Booleans")]
     public bool canDashDown = false;
+    [HideInInspector] public bool hasDashedDown = false;
     public bool canDashLeft = true;
     public bool canDashRight = true;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -75,6 +84,11 @@ public class PlayerController : MonoBehaviour
     {
         xVelocityCheck = rb.velocity.x;
         yVelocityCheck = rb.velocity.y;
+
+        if (!collidedWithAnything)
+        {
+            gCheck.isGrounded = false;
+        }
 
         // Sprite flip
         if (rb.velocity.x >= -0.000001)
@@ -92,7 +106,7 @@ public class PlayerController : MonoBehaviour
             jumpPressRemember -= Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f)
         {
             jumpPressRemember = jumpPressTime;
 
@@ -101,6 +115,7 @@ public class PlayerController : MonoBehaviour
                 DoubleJump();
                 canJump = false;
                 canDoubleJump = false;
+                hasDoubleJumped = true;
             }
         }
 
@@ -109,8 +124,11 @@ public class PlayerController : MonoBehaviour
             jumpPressRemember = 0;
             Jump();
             canJump = false;
+            canDashDown = true; 
+        }
+        else if (!canJump && (Input.GetAxis(pInput.rVertical) > -0.25f) && !hasDoubleJumped)
+        {
             canDoubleJump = true;
-            canDashDown = true;
         }
 
 
@@ -121,14 +139,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetAxis("Horizontal") <= 0f)
                 {
-                    Moving(Input.GetAxisRaw("Horizontal"));
+                    Moving(Input.GetAxis("Horizontal"));
                     hSpeed = turningSpeed;
                 }
                 else
                 {
                     if (rb.velocity.x < speedLimit)
                     {
-                        Moving(Input.GetAxisRaw("Horizontal"));
+                        Moving(Input.GetAxis("Horizontal"));
                     }
 
                     hSpeed = walkingSpeed;
@@ -138,14 +156,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetAxis("Horizontal") >= 0f)
                 {
-                    Moving(Input.GetAxisRaw("Horizontal"));
+                    Moving(Input.GetAxis("Horizontal"));
                     hSpeed = turningSpeed;
                 }
                 else
                 {
                     if (rb.velocity.x > -speedLimit)
                     {
-                        Moving(Input.GetAxisRaw("Horizontal"));
+                        Moving(Input.GetAxis("Horizontal"));
                     }
 
                     hSpeed = walkingSpeed;
@@ -153,7 +171,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                Moving(Input.GetAxisRaw("Horizontal"));
+                Moving(Input.GetAxis("Horizontal"));
                 hSpeed = walkingSpeed;
             }
 
@@ -191,22 +209,9 @@ public class PlayerController : MonoBehaviour
         // Dashing
         if (!gCheck.isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.A) && canDashLeft)
+            if ((((Input.GetAxisRaw("Horizontal") < 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x < 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) >= 0.5f) && canDashLeft)
             {
                 if (!canDashRight)
-                {
-                    Dash(1, 1.5f);
-                }
-                else
-                {
-                    Dash(1, 1);
-                }
-                canDashRight = true;
-                canDashLeft = false;
-            }
-            else if (Input.GetKeyDown(KeyCode.D) && canDashRight)
-            {
-                if (!canDashLeft)
                 {
                     Dash(-1, 1.5f);
                 }
@@ -214,37 +219,56 @@ public class PlayerController : MonoBehaviour
                 {
                     Dash(-1, 1);
                 }
+                canDashRight = true;
+                canDashLeft = false;
+            }
+            else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f) && canDashRight)
+            {
+                if (!canDashLeft)
+                {
+                    Dash(1, 1.5f);
+                }
+                else
+                {
+                    Dash(1, 1);
+                }
                 canDashRight = false;
                 canDashLeft = true;
             }
         }
+        
  
         // Down Kick
-        if (Input.GetKeyDown(KeyCode.W) && canDashDown)
+        if ((Input.GetAxis(pInput.rVertical) >= 0.5f || Input.GetButtonDown(pInput.stompButton)) && canDashDown)
         {
             DownKick();
             canDashDown = false;
+            hasDashedDown = true;
         }
 
         // Wall Jumps
-        if (Input.GetKeyDown(KeyCode.S) && canWallJumpL && !isSameWall)
+        if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpL && !isSameWall)
         {
             WallJump(1);
             canWallJumpL = false;
 
-            canDashRight = false;
+            canDashRight = true;
             canDashLeft = true;
             canDashDown = true;
+
+            hasDoubleJumped = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && canWallJumpR && !isSameWall)
+        if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpR && !isSameWall)
         {
             WallJump(-1);
             canWallJumpR = false;
 
             canDashRight = true;
-            canDashLeft = false;
+            canDashLeft = true;
             canDashDown = true;
+
+            hasDoubleJumped = true;
         }
         
     }
@@ -252,10 +276,11 @@ public class PlayerController : MonoBehaviour
     private void LateUpdate()
     {
         // Ground Check
-        if (gCheck.isGrounded && !canDoubleJump)
+        if (gCheck.isGrounded)
         {
             canJump = true;
             canDoubleJump = false;
+            hasDoubleJumped = false;
 
             isSameWall = false;
             lastCol = null;
@@ -263,11 +288,15 @@ public class PlayerController : MonoBehaviour
             canDashLeft = true;
             canDashRight = true;
             canDashDown = false;
+
+            hasDashedDown = false;
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        collidedWithAnything = true;
+
         if (!canJump)
         {
             if (collision.otherCollider == wallBumpL)
@@ -310,12 +339,25 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        collidedWithAnything = false;
+
         if (collision.otherCollider == wallBumpL || collision.otherCollider == wallBumpR)
         {
             canWallJumpL = false;
             canWallJumpR = false;
 
             lastCol = collision.collider;
+        }
+
+        if (canJump)
+        {
+            canJump = false;
+            canDashDown = true;
+        }
+
+        if (!canJump && (Input.GetAxis(pInput.rVertical) > -0.25f) && !hasDoubleJumped)
+        {
+            canDoubleJump = true;
         }
     }
 

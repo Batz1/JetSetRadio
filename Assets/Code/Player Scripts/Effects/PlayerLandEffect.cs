@@ -10,7 +10,7 @@ public class PlayerLandEffect : MonoBehaviour
     bool canPlay = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         landEffect = GetComponent<ParticleSystem>();
     }

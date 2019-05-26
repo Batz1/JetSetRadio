@@ -46,8 +46,19 @@ public class GroundCheck : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.otherCollider == col)
+        {
+            isGrounded = true;
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
+        if (collision.otherCollider == col)
+        {
+            isGrounded = false;
+        }
     }
 }
