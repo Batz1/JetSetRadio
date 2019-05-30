@@ -1,0 +1,2 @@
+C:\Users\user\Documents\unity projects\Project Jetstream - Mentor Finals 2019\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\user\Documents\unity projects\Project Jetstream - Mentor Finals 2019\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

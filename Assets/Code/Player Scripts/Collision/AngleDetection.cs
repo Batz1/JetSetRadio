@@ -31,24 +31,48 @@ public class AngleDetection : MonoBehaviour
 
         RaycastHit2D[] hits = new RaycastHit2D[2];
         int h = Physics2D.RaycastNonAlloc(transform.position, -Vector2.up, hits);
+        Debug.DrawRay(transform.position, -Vector2.up);
+        GameObject floor;
 
-        if (h > 1 && hits[1].distance <= minDistance)
+        if (h > 1)
         {
-            hitNormal = hits[1].normal;
+            floor = hits[1].collider.gameObject;
 
-            // Getting the angle
-            currentAngle = Mathf.Abs(Mathf.Atan2(hits[1].normal.x, hits[1].normal.y) * Mathf.Rad2Deg);
-        }
-        else
-        {
-            currentAngle = 0;
+            if (!floor.CompareTag("Range"))
+            {
+                if (h > 1 && hits[1].distance <= minDistance)
+                {
+                    hitNormal = hits[1].normal;
+
+                    // Getting the angle
+                    currentAngle = Mathf.Abs(Mathf.Atan2(hits[1].normal.x, hits[1].normal.y) * Mathf.Rad2Deg);
+                }
+                else
+                {
+                    currentAngle = 0;
+                }
+            }
+            else
+            {
+                if (h > 2 && hits[2].distance <= minDistance)
+                {
+                    hitNormal = hits[2].normal;
+
+                    // Getting the angle
+                    currentAngle = Mathf.Abs(Mathf.Atan2(hits[2].normal.x, hits[2].normal.y) * Mathf.Rad2Deg);
+                }
+                else
+                {
+                    currentAngle = 0;
+                }
+            }
         }
 
         if (currentAngle > minAngle && currentAngle < maxAngle && !co.canWallJumpL && !co.canWallJumpR)
         {
             if (co.rb.velocity.y >= 0)
             {
-                co.rb.gravityScale = rbGravity * (1 - (currentAngle * 0.0125f));
+                co.rb.gravityScale = rbGravity * (1 - (currentAngle * 0.015f));
             }
 
             if (!co.gCheck.isGrounded && co.collidedWithAnything)

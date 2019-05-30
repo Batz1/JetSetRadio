@@ -6,30 +6,44 @@ public class Projectile : MonoBehaviour
 {
 
     [SerializeField] float projectileSpeed;
-    private Transform player;
-    private Vector2 target;
+    Transform player;
+    Vector3 target;
+    public Vector2 goTo;
+    public float lifeTime;
+    [HideInInspector] public float lifeTick;
+    [HideInInspector] public Transform parentEnemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector2(player.position.x, player.position.y);
+        player = GameManager.instance.currentPlayer.transform;
+        target = new Vector3(player.position.x, player.position.y, 0);
+
+        goTo = target - transform.position;
+
+        lifeTick = lifeTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, projectileSpeed * Time.deltaTime);
+        transform.Translate(goTo.normalized * projectileSpeed * Time.deltaTime);
 
-        if(transform.position.x == target.x && transform.position.y == target.y)
+        lifeTick -= Time.deltaTime;
+
+        if(lifeTick < 0)
         {
-            DestroyProjectile();
+            Destroy(gameObject);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") || other.CompareTag("Enemy") || other.CompareTag("Deflect") || other.CompareTag("Range") || other.CompareTag("playerProjectile"))
+        {
+            return;
+        }
+        else
         {
             DestroyProjectile();
         }
@@ -37,6 +51,6 @@ public class Projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Breakable
+  - enemyProjectile
+  - Hitbox
+  - Enemy
+  - Platform
+  - Deflect
+  - playerProjectile
+  - Laser
+  - Range
   layers:
   - Default
   - TransparentFX

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     [HideInInspector]
     public Rigidbody2D rb;
 
@@ -66,7 +67,9 @@ public class PlayerController : MonoBehaviour
     public bool canDashDown = false;
     [HideInInspector] public bool hasDashedDown = false;
     public bool canDashLeft = true;
+    [HideInInspector] public bool isDashingL = false;
     public bool canDashRight = true;
+    [HideInInspector] public bool isDashingR = false;
 
     private void Awake()
     {
@@ -90,187 +93,209 @@ public class PlayerController : MonoBehaviour
             gCheck.isGrounded = false;
         }
 
-        // Sprite flip
-        if (rb.velocity.x >= -0.000001)
+        if (GameManager.instance.isPlayerAlive)
         {
-            playerSprite.transform.localScale = new Vector2(1, 1);
-        }
-        else
-        {
-            playerSprite.transform.localScale = new Vector2(-1, 1);
-        }
-
-        // Jump and double jump
-        if (jumpPressRemember >= -0.2)
-        {
-            jumpPressRemember -= Time.deltaTime;
-        }
-
-        if (Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f)
-        {
-            jumpPressRemember = jumpPressTime;
-
-            if (canDoubleJump)
+            // Sprite flip
+            if (rb.velocity.x >= -0.000001)
             {
-                DoubleJump();
+                playerSprite.transform.localScale = new Vector2(1, 1);
+            }
+            else
+            {
+                playerSprite.transform.localScale = new Vector2(-1, 1);
+            }
+
+            // Jump and double jump
+            if (jumpPressRemember >= -0.2)
+            {
+                jumpPressRemember -= Time.deltaTime;
+            }
+
+            if (Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f)
+            {
+                jumpPressRemember = jumpPressTime;
+
+                if (canDoubleJump)
+                {
+                    DoubleJump();
+                    canJump = false;
+                    canDoubleJump = false;
+                    hasDoubleJumped = true;
+                }
+            }
+
+            if (jumpPressRemember > 0 && canJump)
+            {
+                jumpPressRemember = 0;
+                Jump();
                 canJump = false;
-                canDoubleJump = false;
+                canDashDown = true;
+            }
+            else if (!canJump && (Input.GetAxis(pInput.rVertical) > -0.25f) && !hasDoubleJumped)
+            {
+                canDoubleJump = true;
+            }
+
+
+            // Horizontal movement
+            if (Input.GetAxis("Horizontal") != 0f)
+            {
+                if (rb.velocity.x > 0)
+                {
+                    if (Input.GetAxis("Horizontal") <= 0f)
+                    {
+                        Moving(Input.GetAxis("Horizontal"));
+                        hSpeed = turningSpeed;
+                    }
+                    else
+                    {
+                        if (rb.velocity.x < speedLimit)
+                        {
+                            Moving(Input.GetAxis("Horizontal"));
+                        }
+
+                        hSpeed = walkingSpeed;
+                    }
+                }
+                else if (rb.velocity.x < 0)
+                {
+                    if (Input.GetAxis("Horizontal") >= 0f)
+                    {
+                        Moving(Input.GetAxis("Horizontal"));
+                        hSpeed = turningSpeed;
+                    }
+                    else
+                    {
+                        if (rb.velocity.x > -speedLimit)
+                        {
+                            Moving(Input.GetAxis("Horizontal"));
+                        }
+
+                        hSpeed = walkingSpeed;
+                    }
+                }
+                else
+                {
+                    Moving(Input.GetAxis("Horizontal"));
+                    hSpeed = walkingSpeed;
+                }
+
+                if (rb.velocity.x > speedLimit || rb.velocity.x < -speedLimit)
+                {
+                    if (!gCheck.isGrounded)
+                    {
+                        gCheck.groundDetectRemember = gCheck.groundDetectTimer;
+                    }
+
+                    if (gCheck.cancelMomentum)
+                    {
+                        GroundBreak();
+                    }
+
+                    breakForce = minBreakForce;
+                }
+                else
+                {
+                    gCheck.groundDetectRemember = 0;
+                    breakForce = maxBreakForce;
+                }
+            }
+            else if (gCheck.cancelMomentum)
+            {
+                // Breaking momentum while grounded
+                GroundBreak();
+            }
+            else
+            {
+                breakForce = minBreakForce;
+            }
+
+
+            // Dashing
+            if (!gCheck.isGrounded)
+            {
+                if ((((Input.GetAxisRaw("Horizontal") < 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x < 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) >= 0.5f) && canDashLeft)
+                {
+                    isDashingL = true;
+                    isDashingR = false;
+
+                    if (!canDashRight)
+                    {
+                        Dash(-1, 1.5f);
+                    }
+                    else
+                    {
+                        Dash(-1, 1);
+                    }
+                    canDashRight = true;
+                    canDashLeft = false;
+                }
+                else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f) && canDashRight)
+                {
+                    isDashingR = true;
+                    isDashingL = false;
+
+                    if (!canDashLeft)
+                    {
+                        Dash(1, 1.5f);
+                    }
+                    else
+                    {
+                        Dash(1, 1);
+                    }
+                    canDashRight = false;
+                    canDashLeft = true;
+                }
+                else
+                {
+                    isDashingL = false;
+                    isDashingR = false;
+                }
+            }
+            else
+            {
+                isDashingL = false;
+                isDashingR = false;
+            }
+
+
+            // Down Kick
+            if ((Input.GetAxis(pInput.rVertical) >= 0.5f || Input.GetButtonDown(pInput.stompButton)) && canDashDown)
+            {
+                DownKick();
+                canDashDown = false;
+                hasDashedDown = true;
+            }
+
+            // Wall Jumps
+            if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpL && !isSameWall)
+            {
+                WallJump(1);
+                canWallJumpL = false;
+
+                canDashRight = true;
+                canDashLeft = true;
+                canDashDown = true;
+
+                hasDoubleJumped = true;
+            }
+
+            if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpR && !isSameWall)
+            {
+                WallJump(-1);
+                canWallJumpR = false;
+
+                canDashRight = true;
+                canDashLeft = true;
+                canDashDown = true;
+
                 hasDoubleJumped = true;
             }
         }
-
-        if (jumpPressRemember > 0 && canJump)
-        {
-            jumpPressRemember = 0;
-            Jump();
-            canJump = false;
-            canDashDown = true; 
-        }
-        else if (!canJump && (Input.GetAxis(pInput.rVertical) > -0.25f) && !hasDoubleJumped)
-        {
-            canDoubleJump = true;
-        }
-
-
-        // Horizontal movement
-        if (Input.GetAxis("Horizontal") != 0f)
-        {
-            if (rb.velocity.x > 0)
-            {
-                if (Input.GetAxis("Horizontal") <= 0f)
-                {
-                    Moving(Input.GetAxis("Horizontal"));
-                    hSpeed = turningSpeed;
-                }
-                else
-                {
-                    if (rb.velocity.x < speedLimit)
-                    {
-                        Moving(Input.GetAxis("Horizontal"));
-                    }
-
-                    hSpeed = walkingSpeed;
-                }
-            }
-            else if (rb.velocity.x < 0)
-            {
-                if (Input.GetAxis("Horizontal") >= 0f)
-                {
-                    Moving(Input.GetAxis("Horizontal"));
-                    hSpeed = turningSpeed;
-                }
-                else
-                {
-                    if (rb.velocity.x > -speedLimit)
-                    {
-                        Moving(Input.GetAxis("Horizontal"));
-                    }
-
-                    hSpeed = walkingSpeed;
-                }
-            }
-            else
-            {
-                Moving(Input.GetAxis("Horizontal"));
-                hSpeed = walkingSpeed;
-            }
-
-            if (rb.velocity.x > speedLimit || rb.velocity.x < -speedLimit)
-            {
-                if (!gCheck.isGrounded)
-                {
-                    gCheck.groundDetectRemember = gCheck.groundDetectTimer;
-                }
-
-                if (gCheck.cancelMomentum)
-                {
-                    GroundBreak();
-                }
-
-                breakForce = minBreakForce;
-            }
-            else
-            {
-                gCheck.groundDetectRemember = 0;
-                breakForce = maxBreakForce;
-            }
-        }
-        else if (gCheck.cancelMomentum)
-        {
-            // Breaking momentum while grounded
-            GroundBreak();
-        }
         else
         {
-            breakForce = minBreakForce;
+            rb.velocity = new Vector2(rb.velocity.x * 0.95f, rb.velocity.y);
         }
-
-
-        // Dashing
-        if (!gCheck.isGrounded)
-        {
-            if ((((Input.GetAxisRaw("Horizontal") < 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x < 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) >= 0.5f) && canDashLeft)
-            {
-                if (!canDashRight)
-                {
-                    Dash(-1, 1.5f);
-                }
-                else
-                {
-                    Dash(-1, 1);
-                }
-                canDashRight = true;
-                canDashLeft = false;
-            }
-            else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f) && canDashRight)
-            {
-                if (!canDashLeft)
-                {
-                    Dash(1, 1.5f);
-                }
-                else
-                {
-                    Dash(1, 1);
-                }
-                canDashRight = false;
-                canDashLeft = true;
-            }
-        }
-        
- 
-        // Down Kick
-        if ((Input.GetAxis(pInput.rVertical) >= 0.5f || Input.GetButtonDown(pInput.stompButton)) && canDashDown)
-        {
-            DownKick();
-            canDashDown = false;
-            hasDashedDown = true;
-        }
-
-        // Wall Jumps
-        if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpL && !isSameWall)
-        {
-            WallJump(1);
-            canWallJumpL = false;
-
-            canDashRight = true;
-            canDashLeft = true;
-            canDashDown = true;
-
-            hasDoubleJumped = true;
-        }
-
-        if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpR && !isSameWall)
-        {
-            WallJump(-1);
-            canWallJumpR = false;
-
-            canDashRight = true;
-            canDashLeft = true;
-            canDashDown = true;
-
-            hasDoubleJumped = true;
-        }
-        
     }
 
     private void LateUpdate()
