@@ -23,7 +23,9 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public GameObject currentPlayer;
+    public TimeManager timeManager;
     public bool isPlayerAlive;
+    public bool hasFinishdLevel;
 
     [HideInInspector] public GameObject[] allProjectiles;
     public int projectileCount;
@@ -31,7 +33,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hasFinishdLevel = false;
         isPlayerAlive = true;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -39,9 +43,10 @@ public class GameManager : MonoBehaviour
     {
         CountProjectiles();
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetButtonDown("reset"))
         {
             ResetScene();
+            isPlayerAlive = true;
         }
     }
 

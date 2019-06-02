@@ -7,18 +7,26 @@ public class PlayerAudio : MonoBehaviour
     AudioSource aSource;
 
     public AudioClip jumpSound;
-    public bool canPlayJ;
+    public bool canPlayJ = false;
     public AudioClip dashSound;
-    public bool canPlayD;
+    public bool canPlayD = false;
     public AudioClip landSound;
-    public bool canPlayL;
+    public bool canPlayL = false;
     public AudioClip stompSound;
-    public bool canPlaySA;
+    public bool canPlaySA = false;
     public AudioClip sLandSound;
-    public bool canPlaySL;
-
+    public bool canPlaySL = false;
 
     public PlayerController co;
+
+    private void Awake()
+    {
+        canPlayJ = false;
+        canPlayD = false;
+        canPlayL = false;
+        canPlaySA = false;
+        canPlaySL = false;
+    }
 
     // Start is called before the first frame update
     void Start()

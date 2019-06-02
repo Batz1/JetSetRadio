@@ -161,11 +161,11 @@ public class EnemyDetection : MonoBehaviour
             onGround = false;
         }
 
-        if(transform.position.x > boundries.y - 0.15 && moveRight)
+        if(transform.position.x > boundries.y - 0.2 && moveRight)
         {
             moveRight = false;
         }
-        else if(transform.position.x < boundries.x + 0.15 && !moveRight)
+        else if(transform.position.x < boundries.x + 0.2 && !moveRight)
         {
             moveRight = true;
         }
@@ -174,7 +174,7 @@ public class EnemyDetection : MonoBehaviour
     void RangeCheck()
     {
         rangeX = new Vector2(transform.position.x - rangeXdist, transform.position.x + rangeXdist);
-        rangeY = new Vector2(transform.position.y - rangeYdist, transform.position.y + rangeYdist);
+        rangeY = new Vector2(transform.position.y - (rangeYdist * 0.5f), transform.position.y + (rangeYdist * 1.5f));
 
         if(target.position.x >= rangeX.x && target.position.x <= rangeX.y && target.position.y >= rangeY.x && target.position.y <= rangeY.y)
         {
