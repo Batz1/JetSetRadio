@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: bf5472d10ee6c714ea75269c959f85e9
+guid: 765a1df61ef164c489122dd188fbe7c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7223950226953391895
-    second: Platform1
+      213: -8896702447141653487
+    second: Screen_0
   - first:
-      213: -8377130690987618698
-    second: Platform2
+      213: -7089322018372000976
+    second: Screen_1
   - first:
-      213: -4684333735789482159
-    second: BorderCorner
+      213: 1457573298960320304
+    second: Screen_2
   - first:
-      213: -5062486230716756072
-    second: BorderSide
-  - first:
-      213: 4099902767569298868
-    second: WallMid
-  - first:
-      213: -6833445872158455971
-    second: WallBottom
-  - first:
-      213: -537749870668139058
-    second: DecorRail1
-  - first:
-      213: 1561205615984820651
-    second: DecorRail2
+      213: -3135151245550210987
+    second: Screen_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -108,169 +96,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Platform1
+      name: Screen_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 76
-        width: 32
-        height: 48
+        x: 0
+        y: 65
+        width: 89
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7ab6ca096f23e43ae2cc5cce28aef8
-      internalID: 7223950226953391895
+      spriteID: f6973d3029de69b47861fdbdea81536d
+      internalID: -8896702447141653487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform2
+      name: Screen_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 76
-        width: 32
-        height: 48
+        x: 110
+        y: 65
+        width: 89
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdd90ed2ccc52e4ba3d7f591efa345b
-      internalID: -8377130690987618698
+      spriteID: db4755310756fe447b0bb82cbd0326ad
+      internalID: -7089322018372000976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BorderCorner
+      name: Screen_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 87
-        width: 32
-        height: 32
+        x: 0
+        y: 0
+        width: 89
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 144ab634571c8784ab6e4d36fae227a0
-      internalID: -4684333735789482159
+      spriteID: f47755856a162244f9eb598ae9a569b0
+      internalID: 1457573298960320304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BorderSide
+      name: Screen_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 87
-        width: 32
-        height: 32
+        x: 110
+        y: 0
+        width: 89
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed8f5e3b79b18064db6adb3c7d157f13
-      internalID: -5062486230716756072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallMid
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 31
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a81eb081c38a6134e92b48cda4b75aec
-      internalID: 4099902767569298868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WallBottom
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 20
-        width: 32
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57aa4231ceae8da4f917c6564cd12cc3
-      internalID: -6833445872158455971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorRail1
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 45
-        width: 53
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd049a7350f2bd144b0c038aae9b451e
-      internalID: -537749870668139058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorRail2
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 19
-        width: 53
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aae495cfc1c54148ba3a191288e5bd7
-      internalID: 1561205615984820651
+      spriteID: d363cf40b8996ea4b8993b8a73a10708
+      internalID: -3135151245550210987
       vertices: []
       indices: 
       edges: []
@@ -278,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 97ae9f89671e22942951388e691725cd
+    spriteID: 5627df0212ca43045b203ff61beffd94
     internalID: 0
     vertices: []
     indices: 

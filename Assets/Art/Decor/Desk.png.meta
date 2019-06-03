@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: bf5472d10ee6c714ea75269c959f85e9
+guid: 1c235c72254fa1d4189171e91a8f069b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7223950226953391895
-    second: Platform1
+      213: 7872722273471896646
+    second: Desk_0
   - first:
-      213: -8377130690987618698
-    second: Platform2
+      213: 8840223864677710730
+    second: Desk_1
   - first:
-      213: -4684333735789482159
-    second: BorderCorner
+      213: 6988153323376992787
+    second: Desk_2
   - first:
-      213: -5062486230716756072
-    second: BorderSide
+      213: 7964780622526735561
+    second: Desk_3
   - first:
-      213: 4099902767569298868
-    second: WallMid
+      213: -271435103414683614
+    second: Desk_4
   - first:
-      213: -6833445872158455971
-    second: WallBottom
-  - first:
-      213: -537749870668139058
-    second: DecorRail1
-  - first:
-      213: 1561205615984820651
-    second: DecorRail2
+      213: -3741020101278704500
+    second: Desk_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -108,169 +102,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Platform1
+      name: Desk_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 76
-        width: 32
-        height: 48
+        x: 8
+        y: 72
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7ab6ca096f23e43ae2cc5cce28aef8
-      internalID: 7223950226953391895
+      spriteID: a3c61c3557106474a81c237ef2d10f21
+      internalID: 7872722273471896646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform2
+      name: Desk_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 76
-        width: 32
-        height: 48
+        x: 83
+        y: 72
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdd90ed2ccc52e4ba3d7f591efa345b
-      internalID: -8377130690987618698
+      spriteID: 0a48c77604aa33b4792ae9bf7162931e
+      internalID: 8840223864677710730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BorderCorner
+      name: Desk_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 87
-        width: 32
-        height: 32
+        x: 159
+        y: 72
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 144ab634571c8784ab6e4d36fae227a0
-      internalID: -4684333735789482159
+      spriteID: 7f9d8a6c557ab3642a2a0ff767a0cdf1
+      internalID: 6988153323376992787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BorderSide
+      name: Desk_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 87
-        width: 32
-        height: 32
+        x: 8
+        y: 0
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed8f5e3b79b18064db6adb3c7d157f13
-      internalID: -5062486230716756072
+      spriteID: 68af5d4c695d26d4ba3860b1918ca3ce
+      internalID: 7964780622526735561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallMid
+      name: Desk_4
       rect:
         serializedVersion: 2
-        x: 20
-        y: 31
-        width: 32
-        height: 32
+        x: 83
+        y: 0
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81eb081c38a6134e92b48cda4b75aec
-      internalID: 4099902767569298868
+      spriteID: 26356d3ee34783d4b957e811311c9b5b
+      internalID: -271435103414683614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallBottom
+      name: Desk_5
       rect:
         serializedVersion: 2
-        x: 68
-        y: 20
-        width: 32
-        height: 43
+        x: 159
+        y: 0
+        width: 60
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57aa4231ceae8da4f917c6564cd12cc3
-      internalID: -6833445872158455971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorRail1
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 45
-        width: 53
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd049a7350f2bd144b0c038aae9b451e
-      internalID: -537749870668139058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorRail2
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 19
-        width: 53
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aae495cfc1c54148ba3a191288e5bd7
-      internalID: 1561205615984820651
+      spriteID: 58fefd0b90d61a740bd2951e644d9bc1
+      internalID: -3741020101278704500
       vertices: []
       indices: 
       edges: []
@@ -278,7 +230,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 97ae9f89671e22942951388e691725cd
+    spriteID: c3dad424c8e17a64789960a24d6bcb8c
     internalID: 0
     vertices: []
     indices: 

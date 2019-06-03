@@ -1512,6 +1512,7 @@ GameObject:
   - component: {fileID: 8828093350320004350}
   - component: {fileID: 8828093350320004351}
   - component: {fileID: 8828093350320004348}
+  - component: {fileID: 1927827471569496532}
   m_Layer: 0
   m_Name: OpenedDoor
   m_TagString: Untagged
@@ -1527,7 +1528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8828093350320004344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.33, y: 39.78, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8828093349134255853}
@@ -1569,10 +1570,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee750d791697b9f48bf922b3bdcb876a, type: 3}
+  m_SortingLayerID: 1613429687
+  m_SortingLayer: 1
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 3308757868081876400, guid: 66ab53248f6cbe045aac3c303d4842af,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1600,7 +1602,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.44, y: 2.48}
+    oldSize: {x: 4.0666666, y: 4.0666666}
     newSize: {x: 2.44, y: 2.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1625,6 +1627,25 @@ MonoBehaviour:
   resetCanvas: {fileID: 8828093350330333766}
   timeText: {fileID: 8828093350346013974}
   tsecText: {fileID: 7107293183757555322}
+--- !u!95 &1927827471569496532
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8828093350320004344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31e185eec52226542af857688113dd40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8828093350330333766
 GameObject:
   m_ObjectHideFlags: 0
