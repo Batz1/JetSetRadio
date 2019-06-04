@@ -326,6 +326,7 @@ public class PlayerController : MonoBehaviour
         {
             if (collision.otherCollider == wallBumpL)
             {
+                /*
                 if (collision.collider != lastCol)
                 {
                     isSameWall = false;
@@ -334,6 +335,7 @@ public class PlayerController : MonoBehaviour
                 {
                     isSameWall = true;
                 }
+                */
 
                 canDoubleJump = false;
                 canWallJumpL = true;
@@ -341,6 +343,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (collision.otherCollider == wallBumpR)
             {
+                /*
                 if (collision.collider != lastCol)
                 {
                     isSameWall = false;
@@ -349,6 +352,7 @@ public class PlayerController : MonoBehaviour
                 {
                     isSameWall = true;
                 }
+                */
 
                 canDoubleJump = false;
                 canWallJumpR = true;

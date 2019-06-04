@@ -14493,8 +14493,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.55, y: 0}
-  m_Size: {x: 2, y: 3}
+  m_Offset: {x: 2.05, y: 0}
+  m_Size: {x: 3, y: 4}
   m_Direction: 0
 --- !u!70 &2324714209433852769
 CapsuleCollider2D:
@@ -14509,8 +14509,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.55, y: 0}
-  m_Size: {x: 2, y: 3}
+  m_Offset: {x: -2.05, y: 0}
+  m_Size: {x: 3, y: 4}
   m_Direction: 0
 --- !u!114 &8612228150744032002
 MonoBehaviour:
@@ -19369,8 +19369,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1566974281
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5563550803883144649, guid: 672997f635dbadb40b2a11ac666aacd0,
     type: 3}
@@ -19659,22 +19659,22 @@ MonoBehaviour:
   pInput: {fileID: 6608191084143552204}
   wallBumpL: {fileID: 8483943031280824100}
   wallBumpR: {fileID: 5831508028696588469}
-  walkingSpeed: 8
-  turningSpeed: 40
-  speedLimit: 8
+  walkingSpeed: 16
+  turningSpeed: 60
+  speedLimit: 12
   xVelocityCheck: 0
   yVelocityCheck: 0
   jumpSpeed: 12
   doubleJumpSpeed: 12
-  dashDownSpeed: 15
+  dashDownSpeed: 16
   jumpPressTime: 0.2
   jumpPressRemember: 0
-  upForce: 400
-  dashForce: 400
+  upForce: 600
+  dashForce: 600
   minBreakForce: 2
   maxBreakForce: 4
   wallJumpSpeedX: 12
-  wallJumpSpeedY: 10
+  wallJumpSpeedY: 12
   canJump: 0
   canDoubleJump: 0
   collidedWithAnything: 0
@@ -19858,8 +19858,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1236276905
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 46a50db739c482d45b59924d9da08d22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
