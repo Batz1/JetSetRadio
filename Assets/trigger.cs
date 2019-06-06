@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class trigger : MonoBehaviour
 {
-    public GameObject[] Laser;
+    public GameObject LaserFolder;
     public float lTime;
+    bool isPressed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Laser = GameObject.FindGameObjectsWithTag("Laser");    
+           
     }
 
     // Update is called once per frame
@@ -23,24 +24,26 @@ public class trigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            foreach(GameObject laser in Laser)
+            if (!isPressed)
             {
-                laser.SetActive(false);
+                LaserFolder.SetActive(false);
+                Debug.Log("Quick! the lasers are down!");
+                StartCoroutine(startLaser());
+                isPressed = true;
             }
-            Debug.Log("Quick! You can now escape!");
-            StartCoroutine(startLaser());
-          
+            else
+            {
+                Debug.Log("Wait a few seconds dumbass");
+            }
         }
     }
 
     IEnumerator startLaser()
     {
         yield return new WaitForSeconds(lTime);
-        foreach (GameObject laser in Laser)
-        {
-            laser.SetActive(true);
-        }
+        LaserFolder.SetActive(true);
         Debug.Log("Alarm is active");
+        isPressed = false;
     }
     
 }

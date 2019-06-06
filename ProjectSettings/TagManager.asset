@@ -22,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -53,8 +53,14 @@ TagManager:
   - name: Background
     uniqueID: 1613429687
     locked: 0
+  - name: Enemies
+    uniqueID: 1928264449
+    locked: 0
   - name: Player
     uniqueID: 2727993015
+    locked: 0
+  - name: Obstacles
+    uniqueID: 4019971035
     locked: 0
   - name: Front
     uniqueID: 1236276905

@@ -21,7 +21,8 @@ public class LaserSide : MonoBehaviour
 			start = Instantiate(laserStart) as GameObject;
 			start.transform.parent = this.transform;
 			start.transform.localPosition = Vector2.zero;
-		}
+            start.transform.localRotation = Quaternion.identity;
+        }
 
 		// Laser middle
 		if (middle == null)
@@ -29,7 +30,8 @@ public class LaserSide : MonoBehaviour
 			middle = Instantiate(laserMiddle) as GameObject;
 			middle.transform.parent = this.transform;
 			middle.transform.localPosition = Vector2.zero;
-		}
+            middle.transform.localRotation = Quaternion.identity;
+        }
 
 		// Define an "infinite" size, not too big but enough to go off screen
 		float maxLaserSize = 100f;
@@ -52,7 +54,8 @@ public class LaserSide : MonoBehaviour
 				end = Instantiate(laserEnd) as GameObject;
 				end.transform.parent = this.transform;
 				end.transform.localPosition = Vector2.zero;
-			}
+                end.transform.localRotation = Quaternion.identity;
+            }
 		}
 		else
 		{
