@@ -85,7 +85,7 @@ public class EnemyDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("playerProjectile"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -127,6 +127,7 @@ public class EnemyDetection : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
+            Vector2 v = new Vector2(transform.position.x, transform.position.y + 1);
             GameObject myProjectile = Instantiate(projectile, transform.position, Quaternion.identity);
             Projectile pjScript = myProjectile.GetComponent<Projectile>();
             pjScript.parentEnemy = gameObject.transform;

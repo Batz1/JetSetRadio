@@ -23,7 +23,7 @@ public class EndGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasEnteredGoal)
+        if (hasEnteredGoal && GameManager.instance.isPlayerAlive)
         {
             GameManager.instance.hasFinishdLevel = true;
             Time.timeScale = 0.0001f;

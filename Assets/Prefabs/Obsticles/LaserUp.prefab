@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8192331107979814613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e92fe77e256defb48b9f1b58ead9c21f, type: 3}
+  m_Script: {fileID: 11500000, guid: 33f5ae7cf9a89144d86a6b49f1f40004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserStart: {fileID: 8902746968338822690, guid: 132e3dd57d548b6428fcbdefff5bd8f2,
