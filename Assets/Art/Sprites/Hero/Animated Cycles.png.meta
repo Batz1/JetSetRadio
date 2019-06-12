@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: ced90155a16bc724380d6e1426e046eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -512039841390712559
+    second: HeroJump1
+  - first:
+      213: 68961012862566122
+    second: HeroJump2
+  - first:
+      213: 1293119823829515288
+    second: HeroJump3
+  - first:
+      213: -6045404351015626074
+    second: HeroJump4
+  - first:
+      213: 3701411562487958719
+    second: HeroJump5
+  - first:
+      213: -2397576451122250763
+    second: HeroJump6
+  - first:
+      213: 8425370350944305659
+    second: HeroJump7
+  - first:
+      213: -7318766395435223322
+    second: HeroJump8
+  - first:
+      213: 762876763808238949
+    second: HeroJump9
+  - first:
+      213: 4133772401270804440
+    second: HeroJump10
+  - first:
+      213: -5811694053243452816
+    second: HeroJump11
+  - first:
+      213: 2842479679531970080
+    second: HeroJump12
+  - first:
+      213: -4019666110389406184
+    second: HeroWallJumpL1
+  - first:
+      213: 2150890221381525059
+    second: HeroWallJumpL2
+  - first:
+      213: 6347861201325319622
+    second: HeroWallJumpL3
+  - first:
+      213: 9070838920218345503
+    second: HeroWallJumpL4
+  - first:
+      213: 3706111570352203896
+    second: HeroWallJumpR1
+  - first:
+      213: 8588457003269049466
+    second: HeroWallJumpR2
+  - first:
+      213: -8145596233269078240
+    second: HeroWallJumpR3
+  - first:
+      213: 6111483723158818696
+    second: HeroWallJumpR4
+  - first:
+      213: -5958876311996275269
+    second: HeroDeath1
+  - first:
+      213: 4680101988619284435
+    second: HeroDeath2
+  - first:
+      213: 3078489029856465815
+    second: HeroDeath3
+  - first:
+      213: -7302479966321910580
+    second: HeroDeath4
+  - first:
+      213: 4716802205089179647
+    second: HeroDeath5
+  - first:
+      213: -4400127367229755122
+    second: HeroDeath6
+  - first:
+      213: -9148555772619153927
+    second: HeroDeath7
+  - first:
+      213: -2483712958678913150
+    second: HeroDeath8
+  - first:
+      213: -402858311257088012
+    second: BulkWalk1
+  - first:
+      213: 7941559597852813768
+    second: BulkWalk2
+  - first:
+      213: -3102540966061716211
+    second: BulkWalk3
+  - first:
+      213: -8745710505987020379
+    second: BulkWalk4
+  - first:
+      213: -3549418210408534935
+    second: BulkWalk5
+  - first:
+      213: 2969044097382836174
+    second: BulkWalk6
+  - first:
+      213: -7866651096307661332
+    second: BulkWalk7
+  - first:
+      213: -5620636904425171704
+    second: BulkWalk8
+  - first:
+      213: -1268004365504846278
+    second: BulkDeath1
+  - first:
+      213: 4979449804503330851
+    second: BulkDeath2
+  - first:
+      213: 7256738380812609053
+    second: BulkDeath3
+  - first:
+      213: 8128752550106282639
+    second: BulkDeath4
+  - first:
+      213: -2381004078408801694
+    second: BulkDeath5
+  - first:
+      213: 2476559920692026323
+    second: BulkDeath6
+  - first:
+      213: -4271483003675506025
+    second: BulkDeath7
+  - first:
+      213: 804309732075716522
+    second: BulkDeath8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeroJump1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1216
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91ed1136391b6d4fb334514a1e18e3d
+      internalID: -512039841390712559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1216
+        width: 46
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66708fe3cefd2049a6a34bc7a689f09
+      internalID: 68961012862566122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1216
+        width: 45
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7de8ffeaf9dcf4c8d88ae6408358ff
+      internalID: 1293119823829515288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1218
+        width: 44
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f205591a6d1727469151b1d385bcb30
+      internalID: -6045404351015626074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1218
+        width: 44
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b322c9034ac6c684eb420b2a9b5f939b
+      internalID: 3701411562487958719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1218
+        width: 44
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43ead780ab5f6d488669568cbeb5b89
+      internalID: -2397576451122250763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump7
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1219
+        width: 55
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817ae7c2b227c964c8b30f7f019be9f9
+      internalID: 8425370350944305659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1219
+        width: 55
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77975e2bdf53a54f9ef6a148f3b894b
+      internalID: -7318766395435223322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1219
+        width: 55
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e5d63440a61344da6e18be019f83e1
+      internalID: 762876763808238949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump10
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1216
+        width: 50
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c5e6cf2dab08c47aca350410609bf1
+      internalID: 4133772401270804440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump11
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1216
+        width: 52
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d419e13b1c685174189d7ec4346092ee
+      internalID: -5811694053243452816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroJump12
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1216
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad59332f512c09a44afd59c9c96d02eb
+      internalID: 2842479679531970080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpL1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1136
+        width: 39
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96ca53d672391246b7644be6efed242
+      internalID: -4019666110389406184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpL2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1136
+        width: 41
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e389578ce3e6245bc27b8bcc17aa0f
+      internalID: 2150890221381525059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpL3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1136
+        width: 39
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926504daca0e616468e17ffba8a01cc8
+      internalID: 6347861201325319622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpL4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1136
+        width: 48
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeb63f511d76da4b822543bd8263b3f
+      internalID: 9070838920218345503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpR1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1136
+        width: 39
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c9f9fc64c3ea49a1d4474e6075659
+      internalID: 3706111570352203896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpR2
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1136
+        width: 41
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ec68805dc5d554d9e82c421288fa4c
+      internalID: 8588457003269049466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpR3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1136
+        width: 39
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb2ce4781006c44d80514714547fb76
+      internalID: -8145596233269078240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroWallJumpR4
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1136
+        width: 48
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c4991f7c2392e4eb89596d56660504
+      internalID: 6111483723158818696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1056
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e4d01382dce5945aa6d8bcf2dba82c
+      internalID: -5958876311996275269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1056
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7278bc7d2fd9147b0f904b8c21dc17
+      internalID: 4680101988619284435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1056
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cc702efe0731e4996f94e838648970
+      internalID: 3078489029856465815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1068
+        width: 68
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c27c4a5e90697429615c5df4db0e7e
+      internalID: -7302479966321910580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1065
+        width: 68
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300e5b154655f16488b41a3d8bbe65ab
+      internalID: 4716802205089179647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath6
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1056
+        width: 60
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b88e478f7a1bd479d4d9a392c16acc
+      internalID: -4400127367229755122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath7
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1056
+        width: 61
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399eb6b92c0c6e3468d439f889ce4362
+      internalID: -9148555772619153927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroDeath8
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1056
+        width: 61
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1276d93ccda1ca944938902176255277
+      internalID: -2483712958678913150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 928
+        width: 68
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae8e8b5c87ca4643bb2dd23e952d4fa
+      internalID: -402858311257088012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 928
+        width: 60
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b538016635a90054cb630f920f99441d
+      internalID: 7941559597852813768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 928
+        width: 65
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7eee8634444fc488434a574d67692c
+      internalID: -3102540966061716211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk4
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 928
+        width: 84
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70ea721113512241b8d8959043ad8a9
+      internalID: -8745710505987020379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 928
+        width: 84
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7be833428f6bb4995c658d33d937e4
+      internalID: -3549418210408534935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 928
+        width: 85
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681c384c3ed2adf4aa01c30d9fadeae3
+      internalID: 2969044097382836174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk7
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 928
+        width: 79
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d595fc5b8059aac428adfc0bfbee76a3
+      internalID: -7866651096307661332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkWalk8
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 928
+        width: 61
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be04dfe503fb224ab6c5dcbec32752a
+      internalID: -5620636904425171704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 800
+        width: 90
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44d611dccb6b3947814d0b15a084d16
+      internalID: -1268004365504846278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 800
+        width: 90
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f520687782b1a46b6acaac93c9b262
+      internalID: 4979449804503330851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 800
+        width: 87
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fa704443b170e4aa5b1d5b7a504859
+      internalID: 7256738380812609053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath4
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 800
+        width: 94
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb502f7d03f2780489b2de8a0c53f9b3
+      internalID: 8128752550106282639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath5
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 800
+        width: 97
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d5c0f72bed8c745a33e2a2d3dcd5ae
+      internalID: -2381004078408801694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 800
+        width: 99
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa57eae547cb3c047aebd593ab2d149a
+      internalID: 2476559920692026323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath7
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 800
+        width: 103
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d65e61e16494446b62e5e60b9c36bd
+      internalID: -4271483003675506025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulkDeath8
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 800
+        width: 103
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfc22b0886ad9d47afd1dcc028cceaa
+      internalID: 804309732075716522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dabe9ceac816c944aa08d4b11aa3c2e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
