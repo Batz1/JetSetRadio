@@ -7,6 +7,7 @@ public class PlayerHitDetection : MonoBehaviour
     Collider2D col;
     public string projectileTag;
     public string laserTag;
+    public string eFloorTag;
 
     public Rigidbody2D rb;
     Vector2 goTo;
@@ -32,15 +33,19 @@ public class PlayerHitDetection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(projectileTag) || collision.gameObject.CompareTag(laserTag))
+        if (collision.gameObject.CompareTag(projectileTag) || collision.gameObject.CompareTag(laserTag) || collision.gameObject.CompareTag(eFloorTag))
         {
-            Debug.Log("dead lmao");
-            goTo = collision.transform.position - transform.position;
-            rb.freezeRotation = false;
-            rb.velocity = new Vector2(-goTo.normalized.x, 1) * pushForce;
-            rb.MoveRotation(30 * goTo.normalized.x);
-            GameManager.instance.isPlayerAlive = false;
-            col.enabled = false;
+            GetHit(collision);
         }
+    }
+
+    public void GetHit(Collider2D collision)
+    {
+        Debug.Log("dead lmao");
+        goTo = collision.transform.position - transform.position;
+        rb.velocity = new Vector2(-goTo.normalized.x, 1) * pushForce;
+        //rb.MoveRotation(30 * goTo.normalized.x);
+        GameManager.instance.isPlayerAlive = false;
+        col.enabled = false;
     }
 }

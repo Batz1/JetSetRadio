@@ -19396,6 +19396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9aeb6c1a0a784f4f93a77425d1a0139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pc: {fileID: 8415634260775143856}
 --- !u!1 &7096044851096278960
 GameObject:
   m_ObjectHideFlags: 0
@@ -19458,6 +19459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileTag: enemyProjectile
   laserTag: Laser
+  eFloorTag: eFloor
   rb: {fileID: 8415634260775143869}
   pushForce: 4
 --- !u!1 &7875931707020084276

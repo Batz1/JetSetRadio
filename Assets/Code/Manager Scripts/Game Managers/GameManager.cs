@@ -23,9 +23,12 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public GameObject currentPlayer;
+    public PlayerHitDetection phd;
     public TimeManager timeManager;
     public bool isPlayerAlive;
     public bool hasFinishdLevel;
+    public string nameNextLevel = "First Playable Level 2";
+    public int nextLevelIndex = 2;
 
     [HideInInspector] public GameObject[] allProjectiles;
     public int projectileCount;
@@ -60,5 +63,11 @@ public class GameManager : MonoBehaviour
         allProjectiles = GameObject.FindGameObjectsWithTag("enemyProjectile");
 
         projectileCount = allProjectiles.Length;
+    }
+
+    public void WinLevel() // unlock next level from the level selector
+    {
+        Debug.Log("Level Won");
+        PlayerPrefs.SetInt("levelReached", nextLevelIndex);
     }
 }

@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EndGoal : MonoBehaviour
 {
     public GameObject endCanvas;
     public GameObject resetCanvas;
+    public FadeScript fade;
 
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI tsecText;
 
-    bool hasEnteredGoal = false;
+    public Animator animator;
 
+    public GameManager gameManager;
+
+    bool hasEnteredGoal = false;
+    public int levelIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,13 @@ public class EndGoal : MonoBehaviour
             endCanvas.SetActive(true);
             timeText.text = GameManager.instance.timeManager.text.text;
             tsecText.text = GameManager.instance.timeManager.stepText.text;
+            gameManager.WinLevel();
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                FadeToLevel(levelIndex);
+                Time.timeScale = 1f;
+            }
         }
 
         if (!GameManager.instance.isPlayerAlive)
@@ -44,5 +57,11 @@ public class EndGoal : MonoBehaviour
         {
             hasEnteredGoal = true;
         }
+    }
+
+    public void FadeToLevel(int levelIndex)
+    {
+        fade.levelToLoad = levelIndex;
+        fade.animator.SetTrigger("FadeOut");
     }
 }

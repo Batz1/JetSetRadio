@@ -13,6 +13,8 @@ TagManager:
   - playerProjectile
   - Laser
   - Range
+  - Door
+  - eFloor
   layers:
   - Default
   - TransparentFX

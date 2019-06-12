@@ -31,7 +31,7 @@ public class TimeManager : MonoBehaviour
     {
         if (!GameManager.instance.hasFinishdLevel  && GameManager.instance.isPlayerAlive)
         {
-            timeStep += Time.fixedDeltaTime;
+            timeStep += Time.deltaTime;
         }
 
         if(timeStep >= nextTsec)

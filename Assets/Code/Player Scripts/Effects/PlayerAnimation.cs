@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     Animator anim;
-    PlayerController pc;
+    public PlayerController pc;
 
     private void Awake()
     {
@@ -15,22 +15,36 @@ public class PlayerAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pc = GameManager.instance.currentPlayer.GetComponent<PlayerController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         anim.SetFloat("xVelocity", pc.xVelocityCheck);
+        anim.SetFloat("yVelocity", pc.yVelocityCheck);
         anim.SetBool("isGrounded", pc.gCheck.isGrounded);
 
         if (!GameManager.instance.isPlayerAlive)
         {
-            anim.enabled = false;
+            anim.SetBool("isDead", true);
         }
         else
         {
-            anim.enabled = true;
+            anim.SetBool("isDead", false);
+        }
+
+        if (Input.GetButtonDown(pc.pInput.jumpButton) || Input.GetAxis(pc.pInput.rVertical) <= -0.5f)
+        {
+            if (pc.canDoubleJump || pc.canJump)
+            {
+                anim.SetTrigger("pressedJump");
+            }
+        }
+
+        if (pc.jumpPressRemember > 0 && pc.canJump)
+        {
+            anim.SetTrigger("pressedJump");
         }
     }
 }
