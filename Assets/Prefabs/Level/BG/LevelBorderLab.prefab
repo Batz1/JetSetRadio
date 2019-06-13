@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2679001268562947066}
   - component: {fileID: 4842829177265838959}
   m_Layer: 0
-  m_Name: LevelBorder
+  m_Name: LevelBorderLab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
