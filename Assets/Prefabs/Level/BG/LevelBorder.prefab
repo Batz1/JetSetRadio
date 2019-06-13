@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 1613429687
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: adb98fb6b9f91804ebae00c87e0ad032, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b5268ae34f698a4695e423515c907ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -66.12814, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 3.2, y: 3.2, z: 3.2, w: 3.2}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 134.4, y: 76.8}
     newSize: {x: 134.4, y: 76.8}
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 65.60967, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 3.2, y: 3.2, z: 3.2, w: 3.2}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 134.4, y: 76.8}
     newSize: {x: 134.4, y: 76.8}
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -36.739418}
   m_SpriteTilingProperty:
-    border: {x: 3.2, y: 3.2, z: 3.2, w: 3.2}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 134.4, y: 76.8}
     newSize: {x: 134.4, y: 76.8}
@@ -176,7 +176,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 37.096016}
   m_SpriteTilingProperty:
-    border: {x: 3.2, y: 3.2, z: 3.2, w: 3.2}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 134.4, y: 76.8}
     newSize: {x: 134.4, y: 76.8}

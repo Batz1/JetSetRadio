@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 5642884574247579454}
   - component: {fileID: 5642884574247579455}
   - component: {fileID: 5642884574247579452}
+  - component: {fileID: 3738552034903081038}
   m_Layer: 0
-  m_Name: ElectricFloor
+  m_Name: ElectricTile
   m_TagString: eFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,14 +30,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5642884574247579453}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -1.68, y: -4.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.34999996, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 7152575183994436465}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3893085610133803152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74,13 +75,13 @@ SpriteRenderer:
   m_SortingLayerID: 1236276905
   m_SortingLayer: 5
   m_SortingOrder: 6
-  m_Sprite: {fileID: 4099902767569298868, guid: bf5472d10ee6c714ea75269c959f85e9,
+  m_Sprite: {fileID: 7394584921845722477, guid: b60e2b0ecb2d61d46a9cc520c1cb007b,
     type: 3}
   m_Color: {r: 0, g: 0.8339977, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 2.112, y: 4.681636}
+  m_Size: {x: 6.3554707, y: 2.9065895}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -109,21 +110,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 64109f8a7974f0e42883c1406bed192d, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.013867855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1333334, y: 2.1333334}
-    newSize: {x: 2.112, y: 4.681636}
+    oldSize: {x: 7.92, y: 3.36}
+    newSize: {x: 6.3554707, y: 2.9065895}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1333334, y: 4.681636}
+  m_Size: {x: 6.3806057, y: 2.8582525}
   m_EdgeRadius: 0
 --- !u!70 &5642884574247579454
 CapsuleCollider2D:
@@ -138,9 +139,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9829656, y: 0}
-  m_Size: {x: 0.8796201, y: 4.4151034}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 2}
+  m_Size: {x: 6, y: 2}
+  m_Direction: 1
 --- !u!198 &5642884574247579455
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -224,7 +225,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -331,7 +332,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.9880785, b: 0, a: 1}
+      maxColor: {r: 0, g: 0.7764706, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -393,7 +394,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -715,7 +716,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -774,9 +775,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 270, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Position: {x: 0, y: 0.58812827, z: 0.00000007011037}
+    m_Rotation: {x: 270, y: 270, z: 0}
+    m_Scale: {x: 1, y: 3, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -844,7 +845,7 @@ ParticleSystem:
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
     alignToDirection: 0
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: b60e2b0ecb2d61d46a9cc520c1cb007b, type: 3}
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0
@@ -855,7 +856,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 2.5
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -3986,9 +3987,9 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 0
+    enabled: 1
     mode: 0
-    ratio: 1
+    ratio: 0.8
     lifetime:
       serializedVersion: 2
       minMaxState: 0
@@ -4120,7 +4121,7 @@ ParticleSystem:
     widthOverTrail:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4818,7 +4819,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: be673ffe109ed15418e1b66aa67e0ba4, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: be673ffe109ed15418e1b66aa67e0ba4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4835,9 +4836,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -403669093
-  m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingLayerID: 1236276905
+  m_SortingLayer: 5
+  m_SortingOrder: 7
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4861,6 +4862,25 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!95 &3738552034903081038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642884574247579453}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b12134dd46cc224984fde59c9ee44f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7121338822976198271
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,12 +4893,12 @@ GameObject:
   - component: {fileID: 2110517035326910455}
   - component: {fileID: 4378564247301252257}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ElectricTrails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7152575183994436465
 Transform:
   m_ObjectHideFlags: 0
@@ -4887,8 +4907,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7121338822976198271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.63, y: 0, z: 0}
-  m_LocalScale: {x: 1.0101022, y: 1.0101022, z: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 53664521086764389}
   m_RootOrder: 0
@@ -5083,7 +5103,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.94471574, b: 0, a: 1}
+      maxColor: {r: 0, g: 0.8352942, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5527,7 +5547,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 270, z: 0}
+    m_Rotation: {x: 270, y: 269.99997, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -9587,9 +9607,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -403669093
-  m_SortingLayer: 6
-  m_SortingOrder: 1
+  m_SortingLayerID: 1236276905
+  m_SortingLayer: 5
+  m_SortingOrder: 8
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
