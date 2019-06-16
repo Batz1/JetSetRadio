@@ -8,15 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tests/Os's GameplayTest scene.unity
     guid: 9218ac90b353e144d8ad33937d3b3391
+  - enabled: 0
+    path: Assets/Scenes/Tests/POC.unity
+    guid: 9056e25eaac8d9d41af8a0818abed0d3
+  - enabled: 0
+    path: Assets/Scenes/Tests/Player Controls Test.unity
+    guid: ec7c2f5501ed92c4eb647bc4c2e74469
   - enabled: 1
     path: Assets/Scenes/Menus/Main Menu.unity
     guid: 89877997da3510b45b69257d259dc33a
   - enabled: 1
     path: Assets/Scenes/Menus/Level Select.unity
     guid: f72cf99fd324e0c4d934acaf1d022489
-  - enabled: 0
-    path: Assets/Scenes/Tests/POC.unity
-    guid: 9056e25eaac8d9d41af8a0818abed0d3
   - enabled: 1
     path: Assets/Scenes/Tests/New friday level.unity
     guid: 6f0f12ccd3a8b52418515ab15daeb4ea
@@ -24,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/First Playable Level 2.unity
     guid: e8114b52272a64d4ba36205864f4ca54
   - enabled: 1
-    path: Assets/Scenes/Tests/Player Controls Test.unity
-    guid: ec7c2f5501ed92c4eb647bc4c2e74469
+    path: Assets/Scenes/Tests/Level 3.unity
+    guid: cd72b3517211ec748943739fff3aa418
   m_configObjects: {}

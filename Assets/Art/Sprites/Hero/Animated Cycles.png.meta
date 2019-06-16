@@ -134,6 +134,12 @@ TextureImporter:
   - first:
       213: 804309732075716522
     second: BulkDeath8
+  - first:
+      213: -1112359587751304880
+    second: Animated Cycles_0
+  - first:
+      213: -4634384471274380595
+    second: Animated Cycles_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -534,8 +540,8 @@ TextureImporter:
       name: HeroWallJumpL4
       rect:
         serializedVersion: 2
-        x: 197
-        y: 1136
+        x: 0
+        y: 866
         width: 48
         height: 60
       alignment: 7
@@ -1135,6 +1141,48 @@ TextureImporter:
       bones: []
       spriteID: 2bfc22b0886ad9d47afd1dcc028cceaa
       internalID: 804309732075716522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated Cycles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 49
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13afac02c5dbe0b419e28cbb0590b5c5
+      internalID: -1112359587751304880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated Cycles_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1136
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9331d1534a18fbf40bee20fe79c99ffe
+      internalID: -4634384471274380595
       vertices: []
       indices: 
       edges: []

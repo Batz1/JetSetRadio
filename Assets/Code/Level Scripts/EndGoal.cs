@@ -13,12 +13,10 @@ public class EndGoal : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI tsecText;
 
-    public Animator animator;
-
-    public GameManager gameManager;
-
     bool hasEnteredGoal = false;
+    public bool isLocked = false;
     public int levelIndex;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +27,14 @@ public class EndGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasEnteredGoal && GameManager.instance.isPlayerAlive)
+        if (hasEnteredGoal && GameManager.instance.isPlayerAlive && !isLocked)
         {
             GameManager.instance.hasFinishdLevel = true;
             Time.timeScale = 0.0001f;
             endCanvas.SetActive(true);
             timeText.text = GameManager.instance.timeManager.text.text;
             tsecText.text = GameManager.instance.timeManager.stepText.text;
-            gameManager.WinLevel();
+            GameManager.instance.WinLevel();
 
             if (Input.GetButtonDown("Jump"))
             {

@@ -1341,7 +1341,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7079380537084331091, guid: ec17e1ca5a4f0124d82f3f7ed5ac09b3,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0543bb5781cce4a45bc8a17dad563b51, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8d36a96be6ab616499f75aad8e17080a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3608,11 +3608,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3d86e024eb891499ae6cc6cc8dbb0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerControl: {fileID: 0}
-  playerRb: {fileID: 0}
-  velocityX: 12
-  enemyVelocityX: 1
-  _distance: 0.5
+  velocityLimit: 0
+  goTo: {x: 0, y: 0}
+  pushForce: 0
 --- !u!1001 &1233900188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7396,6 +7394,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
+        type: 3}
+      propertyPath: currentPlayer
+      value: 
+      objectReference: {fileID: 912691400}
+    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
+        type: 3}
+      propertyPath: timeManager
+      value: 
+      objectReference: {fileID: 278175012}
+    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
+        type: 3}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 474081580}
+    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
+        type: 3}
+      propertyPath: nameNextLevel
+      value: First Playable Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
+        type: 3}
+      propertyPath: nextLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3778797626104367286, guid: 7f4e0d0d555a21f4793f77e435043c49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7450,31 +7473,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
-        type: 3}
-      propertyPath: currentPlayer
-      value: 
-      objectReference: {fileID: 912691400}
-    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
-        type: 3}
-      propertyPath: timeManager
-      value: 
-      objectReference: {fileID: 278175012}
-    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
-        type: 3}
-      propertyPath: bgm
-      value: 
-      objectReference: {fileID: 474081580}
-    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
-        type: 3}
-      propertyPath: nameNextLevel
-      value: First Playable Level 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778797626104367285, guid: 7f4e0d0d555a21f4793f77e435043c49,
-        type: 3}
-      propertyPath: nextLevelIndex
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f4e0d0d555a21f4793f77e435043c49, type: 3}
@@ -7652,7 +7650,7 @@ PrefabInstance:
     - target: {fileID: 8828093350320004348, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
         type: 3}
       propertyPath: levelIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8828093350320004348, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
         type: 3}
@@ -7670,15 +7668,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b878a0bb671b213409f6b5eec2faff55,
         type: 2}
-    - target: {fileID: 8760593249411173234, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.37
-      objectReference: {fileID: 0}
     - target: {fileID: 8828093349134255849, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760593249411173234, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f0df50d2ed74b4d87fbe264f180c2e, type: 3}
@@ -7700,3 +7698,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5919f58b68a1948b0657e737999df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelData: {fileID: 0}

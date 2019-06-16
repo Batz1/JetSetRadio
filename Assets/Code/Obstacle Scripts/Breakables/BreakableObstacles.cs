@@ -5,11 +5,9 @@ using UnityEngine;
 public class BreakableObstacles : MonoBehaviour
 {
 
-    //[SerializeField] int maxObstaclesHits;
-    //[SerializeField] int timesObstaclesHit;
     Rigidbody2D playerRB2d;
-    [SerializeField] float velocityX;
-    [SerializeField] float velocityY;
+    public float velocityX;
+    public float velocityY;
 
 
     // Start is called before the first frame update
@@ -28,7 +26,7 @@ public class BreakableObstacles : MonoBehaviour
 
     private void HandleHit()
     {
-        if (playerRB2d.velocity.x >= velocityX || playerRB2d.velocity.x <= -velocityX)
+        if ((playerRB2d.velocity.x >= velocityX || playerRB2d.velocity.x <= -velocityX) || (playerRB2d.velocity.y >= velocityY || playerRB2d.velocity.y <= -velocityY))
         {
             Destroy(gameObject);
         }

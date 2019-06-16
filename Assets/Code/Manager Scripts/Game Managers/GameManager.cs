@@ -25,13 +25,12 @@ public class GameManager : MonoBehaviour
     public GameObject currentPlayer;
     public PlayerHitDetection phd;
     public TimeManager timeManager;
+
     public bool isPlayerAlive;
     public bool hasFinishdLevel;
+
     public string nameNextLevel = "First Playable Level 2";
     public int nextLevelIndex = 2;
-
-    [HideInInspector] public GameObject[] allProjectiles;
-    public int projectileCount;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +43,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CountProjectiles();
-
         if(Input.GetButtonDown("reset"))
         {
             ResetScene();
@@ -58,16 +55,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    void CountProjectiles()
-    {
-        allProjectiles = GameObject.FindGameObjectsWithTag("enemyProjectile");
-
-        projectileCount = allProjectiles.Length;
-    }
-
     public void WinLevel() // unlock next level from the level selector
     {
-        Debug.Log("Level Won");
         PlayerPrefs.SetInt("levelReached", nextLevelIndex);
     }
 }

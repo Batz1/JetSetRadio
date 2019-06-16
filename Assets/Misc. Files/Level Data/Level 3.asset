@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Player Controls Test
   sceneNumber: 4
-  rankS: 18.5
-  rankA: 23.5
-  rankB: 26.5
-  rankC: 30.5
-  rankD: 35
+  rankS: 40
+  rankA: 45
+  rankB: 50
+  rankC: 60
+  rankD: 70

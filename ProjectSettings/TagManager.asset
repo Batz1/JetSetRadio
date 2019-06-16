@@ -15,6 +15,7 @@ TagManager:
   - Range
   - Door
   - eFloor
+  - doorSwitch
   layers:
   - Default
   - TransparentFX
