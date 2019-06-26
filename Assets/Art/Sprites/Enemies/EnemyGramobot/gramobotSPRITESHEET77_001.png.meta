@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 8d3a40d4b97dcc149b0186381a55f545
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3946777590132824269
+    second: GramobotIdle1
+  - first:
+      213: 933887478269002769
+    second: GramobotIdle2
+  - first:
+      213: -222842253046667733
+    second: GramobotIdle3
+  - first:
+      213: 6520722391006654168
+    second: GramobotIdle4
+  - first:
+      213: -1419067219246297040
+    second: GramobotIdle5
+  - first:
+      213: 764849181693713028
+    second: GramobotWalk1
+  - first:
+      213: -4950633928081268543
+    second: GramobotWalk2
+  - first:
+      213: -6891581833991070137
+    second: GramobotWalk3
+  - first:
+      213: -5828004984263337780
+    second: GramobotWalk4
+  - first:
+      213: -5727942181138104004
+    second: GramobotWalk5
+  - first:
+      213: -318972637123888178
+    second: GramobotWalk6
+  - first:
+      213: 9171489439496884098
+    second: GramobotSplit1
+  - first:
+      213: -7804788478560971185
+    second: GramobotSplit2
+  - first:
+      213: -7737123920633670766
+    second: GramobotSplit3
+  - first:
+      213: 2169967835558026741
+    second: GramobotSplit4
+  - first:
+      213: 4448622039306861451
+    second: GramobotSplit5
+  - first:
+      213: -2945396359858571886
+    second: GramobotLeftHalf1
+  - first:
+      213: -6590840515035875982
+    second: GramobotRightHalf1
+  - first:
+      213: 8088363662634042750
+    second: GramobotLeftHalf2
+  - first:
+      213: -2323411342701073945
+    second: GramobotRightHalf2
+  - first:
+      213: -4189165524976197362
+    second: GramobotLeftHalf3
+  - first:
+      213: 4219815867706001917
+    second: GramobotRightHalf3
+  - first:
+      213: 5900354781848597245
+    second: GramobotLeftHalf4
+  - first:
+      213: 1121190757089592927
+    second: GramobotRightHalf4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GramobotIdle1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 235
+        width: 57
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a13d4dc8ec6d7e408ba23972df74851
+      internalID: -3946777590132824269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotIdle2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 235
+        width: 57
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad57fe28e05950a47bf21c338327623e
+      internalID: 933887478269002769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotIdle3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 235
+        width: 57
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b172f2b08b37e94ea47ba127e495ac6
+      internalID: -222842253046667733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotIdle4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 235
+        width: 57
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb310d990cd8e541a1754938bb5ccd0
+      internalID: 6520722391006654168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotIdle5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 235
+        width: 57
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd86ad48bf430d84bb58a9fbc028dde5
+      internalID: -1419067219246297040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 161
+        width: 57
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247092160011a964c81b43df8fac8df1
+      internalID: 764849181693713028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 161
+        width: 57
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb03dec09858334da2035585cab41b3
+      internalID: -4950633928081268543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 161
+        width: 57
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633852ca48a00ea47ac28ee4e9643372
+      internalID: -6891581833991070137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 161
+        width: 57
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fe082017343894bb4afa8ab3463c89
+      internalID: -5828004984263337780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 161
+        width: 57
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0750f8d2f2ea1bd41af59f2e515e3722
+      internalID: -5727942181138104004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotWalk6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 161
+        width: 57
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a114e54b0b792364aa97f576032d7ce9
+      internalID: -318972637123888178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotSplit1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 89
+        width: 57
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c1194e65611d64fbdc259922254956
+      internalID: 9171489439496884098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotSplit2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 89
+        width: 61
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737b034b8d3e6cf45bc931795ab65ce7
+      internalID: -7804788478560971185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotSplit3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 89
+        width: 63
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c307459cee7e043a740f3c7586948e
+      internalID: -7737123920633670766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotSplit4
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 89
+        width: 65
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e0369bc572e2940adeadb7a7e2b907
+      internalID: 2169967835558026741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotSplit5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 89
+        width: 110
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e090ccc9f634244bf81dbe38abbb14
+      internalID: 4448622039306861451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotLeftHalf1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 89
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bfffd45cd27e143b81ddd6b2af7939
+      internalID: -2945396359858571886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotRightHalf1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 89
+        width: 42
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d18e30b81d634459cf12e7e1bf6e4e
+      internalID: -6590840515035875982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotLeftHalf2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 16
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bc969970ded404c9b6d9f1d2c472fa
+      internalID: 8088363662634042750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotRightHalf2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 16
+        width: 42
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf28360f484f7045a069ed953f7e630
+      internalID: -2323411342701073945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotLeftHalf3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 16
+        width: 53
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc30c06e8e53d54ab7b83463f706397
+      internalID: -4189165524976197362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotRightHalf3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 16
+        width: 40
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803ffc8e92107314189e5419f49a574b
+      internalID: 4219815867706001917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotLeftHalf4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 16
+        width: 50
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518c78a9f4322494d8d3b654a7b5afbf
+      internalID: 5900354781848597245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GramobotRightHalf4
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 16
+        width: 41
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e79be9d05505946b0d26f826929059
+      internalID: 1121190757089592927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 55317bd6f83c59a498f6f3e7a212fabd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
