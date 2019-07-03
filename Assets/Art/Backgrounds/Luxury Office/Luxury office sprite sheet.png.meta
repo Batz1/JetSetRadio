@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: d8eed8cfdc046c940947a08dde19af88
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8877602908251430917
+    second: OfficeChair
+  - first:
+      213: -4397502389512523137
+    second: OfficeScreen
+  - first:
+      213: 2680204712648200016
+    second: OfficeMonitor
+  - first:
+      213: -303818201592978493
+    second: OfficePlatform1
+  - first:
+      213: -3466637942596252195
+    second: OfficePlatform2
+  - first:
+      213: -7145493285915600556
+    second: OfficePlatform3
+  - first:
+      213: 52838830476877844
+    second: OfficePlant
+  - first:
+      213: 7382668493383448350
+    second: OfficeDesk1
+  - first:
+      213: 336111490357032167
+    second: OfficeZenTree
+  - first:
+      213: -1090782466500802414
+    second: OfficeWindow
+  - first:
+      213: -8646108149209370841
+    second: OfficeBG
+  - first:
+      213: -6105393212427725951
+    second: OfficeCamera
+  - first:
+      213: 7013599032338179635
+    second: OfficeZenRocks1
+  - first:
+      213: 5669466626365620108
+    second: OfficeZenRocks2
+  - first:
+      213: 3183506249008291318
+    second: OfficeZenRocks3
+  - first:
+      213: -2807349051183885272
+    second: OfficeZenRocks4
+  - first:
+      213: 2423725661755993951
+    second: OfficeDesk2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +114,18 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +133,364 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: OfficeChair
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 419
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b833e8552d37d42b2c981ffada792b
+      internalID: -8877602908251430917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeScreen
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 419
+        width: 75
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c3be1a5319994419fb6c8483e220d8
+      internalID: -4397502389512523137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeMonitor
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 419
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c38ed5c4f21a56429e0f1fd612c5f68
+      internalID: 2680204712648200016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficePlatform1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 419
+        width: 88
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146db50d33a92d145b9ff3e059bd5505
+      internalID: -303818201592978493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficePlatform2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 419
+        width: 88
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cc1cf3206567a48a8ede705588b88f
+      internalID: -3466637942596252195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficePlatform3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 343
+        width: 100
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8a5ef9bb7066444a2fc6c6d0b36454
+      internalID: -7145493285915600556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficePlant
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 343
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5217e3993e779f94fa6a5f33aea3969c
+      internalID: 52838830476877844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeDesk1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 343
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5601f0ecd64b5e409cfa4403641ef0a
+      internalID: 7382668493383448350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeZenTree
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 179
+        width: 95
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48774e85cdedf4b41bff62a405a20c82
+      internalID: 336111490357032167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeWindow
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 179
+        width: 296
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 21, z: 48, w: 22}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5349348858bb84195a0836938adaf9
+      internalID: -1090782466500802414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeBG
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 17
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717cc022e6b9907469f27f5e20dc25e3
+      internalID: -8646108149209370841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeCamera
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be2e443d774d5549832a03c2cb7ffc7
+      internalID: -6105393212427725951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeZenRocks1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 17
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b27447e2913263469e5a6f0a4b77005
+      internalID: 7013599032338179635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeZenRocks2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 17
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c589757b10a5214581074ca0ebcd3e7
+      internalID: 5669466626365620108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeZenRocks3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 17
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a3c6b60114a2847aabbc976addd82b
+      internalID: 3183506249008291318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeZenRocks4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 17
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5635de5ff565ad74c8ac81222b9abb47
+      internalID: -2807349051183885272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OfficeDesk2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 17
+        width: 153
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c258b8e26b16b5a41a19b351fdf2d436
+      internalID: 2423725661755993951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
