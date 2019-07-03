@@ -6,27 +6,54 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Tests/Os's GameplayTest scene.unity
+    path: Assets/Scenes/Tests/First Playable/Os's GameplayTest scene.unity
     guid: 9218ac90b353e144d8ad33937d3b3391
   - enabled: 0
-    path: Assets/Scenes/Tests/POC.unity
+    path: Assets/Scenes/Tests/First Playable/POC.unity
     guid: 9056e25eaac8d9d41af8a0818abed0d3
   - enabled: 0
-    path: Assets/Scenes/Tests/Player Controls Test.unity
+    path: Assets/Scenes/Tests/AI & Player Controller test scenes/Player Controls Test.unity
     guid: ec7c2f5501ed92c4eb647bc4c2e74469
+  - enabled: 0
+    path: Assets/Scenes/Menus/Level Select.unity
+    guid: f72cf99fd324e0c4d934acaf1d022489
   - enabled: 1
     path: Assets/Scenes/Menus/Main Menu.unity
     guid: 89877997da3510b45b69257d259dc33a
   - enabled: 1
-    path: Assets/Scenes/Menus/Level Select.unity
-    guid: f72cf99fd324e0c4d934acaf1d022489
+    path: Assets/Scenes/Menus/NewLevelSelectTest.unity
+    guid: 6d0545f9ba2660446a2edeff917f2efa
   - enabled: 1
-    path: Assets/Scenes/Tests/New friday level.unity
+    path: Assets/Scenes/Tests/New tests scenes/New tutorial scene.unity
+    guid: ce24df181d975414e989586b0b61427e
+  - enabled: 1
+    path: Assets/Scenes/Tests/New tests scenes/New tutorial scene 2.unity
+    guid: ed5415fdfee98274896953461d00b981
+  - enabled: 1
+    path: Assets/Scenes/Levels/Laser level 1.unity
+    guid: 554a762ff9ac55d458aaa2ca7c3a1f17
+  - enabled: 0
+    path: Assets/Scenes/Levels/First Playable Level 1.unity
+    guid: 6f0f12ccd3a8b52418515ab15daeb4ea
+  - enabled: 0
+    path: Assets/Scenes/Levels/First Playable Level 2.unity
+    guid: e8114b52272a64d4ba36205864f4ca54
+  - enabled: 0
+    path: Assets/Scenes/Levels/First Playable Level 3.unity
+    guid: cd72b3517211ec748943739fff3aa418
+  - enabled: 1
+    path: Assets/Scenes/Levels/First Playable Level 1.unity
     guid: 6f0f12ccd3a8b52418515ab15daeb4ea
   - enabled: 1
-    path: Assets/Scenes/Tests/First Playable Level 2.unity
+    path: Assets/Scenes/Levels/Laser level 2.unity
+    guid: a3fa88b2cbde78c47aa83912b7f4f6c8
+  - enabled: 1
+    path: Assets/Scenes/Levels/First Playable Level 2.unity
     guid: e8114b52272a64d4ba36205864f4ca54
   - enabled: 1
-    path: Assets/Scenes/Tests/Level 3.unity
+    path: Assets/Scenes/Levels/Laser level 3.unity
+    guid: 9d1f23f2397e32a4d945663619e032b8
+  - enabled: 1
+    path: Assets/Scenes/Levels/First Playable Level 3.unity
     guid: cd72b3517211ec748943739fff3aa418
   m_configObjects: {}

@@ -34,7 +34,7 @@ public class LaserSide : MonoBehaviour
         }
 
 		// Define an "infinite" size, not too big but enough to go off screen
-		float maxLaserSize = 100f;
+		float maxLaserSize = 1000f;
 		float currentLaserSize = maxLaserSize;
 
 		// Raycast at the right as our sprite has been design for that

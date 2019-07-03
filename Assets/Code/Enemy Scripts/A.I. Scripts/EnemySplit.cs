@@ -15,7 +15,7 @@ public class EnemySplit : MonoBehaviour
     public float range;
 
     [SerializeField] GameObject enemyGO;
-   // [SerializeField] Vector3 enemySpawn;
+   GameObject enemySpawn;
 
     private Transform target;
     public Vector3 newTargetPos;
@@ -26,6 +26,7 @@ public class EnemySplit : MonoBehaviour
 
     Rigidbody2D myRB;
 
+    public Animator grandmaAnimator;
     private void Awake()
     {
         myRB = GetComponent<Rigidbody2D>();
@@ -43,8 +44,9 @@ public class EnemySplit : MonoBehaviour
         if (inRange)
         {
                 MoveInCombat();
+            grandmaAnimator.SetBool("Walk", true);
         }
-        Invoke("SplitEnemy",1f);
+        //Invoke("SplitEnemy",1f);
     }
 
     void RangeCheck()
@@ -65,29 +67,36 @@ public class EnemySplit : MonoBehaviour
         myRB.velocity = new Vector2(newTargetPos.normalized.x * speed, myRB.velocity.y);
     }
 
-    void SplitEnemy()
+    public void SplitEnemy()
     {
         if (Vector3.Distance(transform.position, target.position) < range)
         {
             if (!isCreated)
             {
+                grandmaAnimator.SetTrigger("Split");
                 isCreated = true;
-                Instantiate(enemyGO, new Vector3(target.position.x + 3f, -2.47f, target.position.z), Quaternion.identity);
+                enemySpawn = Instantiate(enemyGO, transform.position, Quaternion.identity);
+                enemySpawn.transform.Translate(Vector2.up * Time.deltaTime);
             }
         }
+
         if (isCreated)
         {
             CancelInvoke("SplitEnemy");
-            Destroy(enemyGO, 1f);
-            isCreated = false;
         }
     }
 
-        private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
                 boundries = new Vector2(collision.collider.bounds.min.x, collision.collider.bounds.max.x);
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }

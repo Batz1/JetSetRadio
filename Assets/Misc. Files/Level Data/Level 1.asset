@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b305f56de222dac43b77a0c7dfb2328a, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  levelName: New friday level
+  levelName: Level 1
   sceneNumber: 2
+  levelRankKey: FirstPlayable1
+  currentRank: 0
   rankS: 11.4
   rankA: 12.5
   rankB: 14.5
   rankC: 16.9
-  rankD: 20.3

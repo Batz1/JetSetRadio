@@ -16,6 +16,8 @@ TagManager:
   - Door
   - eFloor
   - doorSwitch
+  - Split
+  - Floor
   layers:
   - Default
   - TransparentFX

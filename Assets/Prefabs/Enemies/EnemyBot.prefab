@@ -207,6 +207,8 @@ MonoBehaviour:
   startTimeBtwShots: 2
   projectile: {fileID: 8530796741298392134, guid: 58485dd1f1d9a09449f9471c4d32ecf7,
     type: 3}
+  playercontrollerscript: {fileID: 0}
+  botAnimator: {fileID: 1950134018489220378}
 --- !u!1 &8051525530585677250
 GameObject:
   m_ObjectHideFlags: 0

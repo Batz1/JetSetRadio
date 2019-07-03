@@ -28,27 +28,41 @@ public class RankDisplay : MonoBehaviour
         if (timer <= levelData.RankS)
         {
             text.text = "S";
+
+            if (levelData.CurrentRank > 1 || levelData.CurrentRank == 0)
+            {
+                levelData.CurrentRank = 1;
+            }
         }
-        else if (timer <= levelData.RankA)
+        else if (timer <= levelData.RankA )
         {
             text.text = "A";
+
+            if (levelData.CurrentRank > 2 || levelData.CurrentRank == 0)
+            {
+                levelData.CurrentRank = 2;
+            }
         }
         else if (timer <= levelData.RankB)
         {
             text.text = "B";
-        }
-        else if (timer <= levelData.RankC)
-        {
-            text.text = "C";
-        }
-        else if (timer <= levelData.RankD)
-        {
-            text.text = "D";
+
+            if (levelData.CurrentRank > 3 || levelData.CurrentRank == 0)
+            {
+                levelData.CurrentRank = 3;
+            }
         }
         else
         {
-            text.text = "E";
+            text.text = "C";
+
+            if (levelData.CurrentRank > 4 || levelData.CurrentRank == 0)
+            {
+                levelData.CurrentRank = 4;
+            }
         }
+
+        
     }
 
 }

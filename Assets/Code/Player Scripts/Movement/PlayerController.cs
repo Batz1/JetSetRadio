@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Horizontal Speed")]
     public float walkingSpeed;
+    public float airSpeed;
     public float turningSpeed;
     float hSpeed;
     public float speedLimit;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed;
     public float doubleJumpSpeed;
     public float dashDownSpeed;
+    public float fallMultiplier;
 
     [Header("Time To Remember Jump Input")]
     public float jumpPressTime = 0.2f;
@@ -42,21 +44,26 @@ public class PlayerController : MonoBehaviour
 
     float breakForce;
 
-    [Range(0f, 5f)]
+    [Range(0f, 10f)]
     public float minBreakForce;
 
-    [Range(0f, 5f)]
+    [Range(0f, 10f)]
     public float maxBreakForce;
 
     [Header("Wall jump speeds")]
     public float wallJumpSpeedX;
     public float wallJumpSpeedY;
+    [Range(0f, 1f)]
+    public float wallJumpRatio;
 
     [Header("Jump Booleans")]
     public bool canJump = true;
     public bool canDoubleJump = false;
     public bool collidedWithAnything = false;
     [HideInInspector] public bool hasDoubleJumped = false;
+
+    [Header("Nothing to see here")]
+    public int howManyDeadEnemies;
 
     [Header("Wall Jump Booleans")]
     public bool canWallJumpL = false;
@@ -71,15 +78,11 @@ public class PlayerController : MonoBehaviour
     public bool canDashRight = true;
     [HideInInspector] public bool isDashingR = false;
 
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -136,6 +139,11 @@ public class PlayerController : MonoBehaviour
                 canDoubleJump = true;
             }
 
+            if(rb.velocity.y < 0)
+            {
+                Fall();
+            }
+
 
             // Horizontal movement
             if (Input.GetAxis("Horizontal") != 0f)
@@ -154,7 +162,14 @@ public class PlayerController : MonoBehaviour
                             Moving(Input.GetAxis("Horizontal"));
                         }
 
-                        hSpeed = walkingSpeed;
+                        if (!gCheck.isGrounded)
+                        {
+                            hSpeed = airSpeed;
+                        }
+                        else
+                        {
+                            hSpeed = walkingSpeed;
+                        }
                     }
                 }
                 else if (rb.velocity.x < 0)
@@ -171,7 +186,14 @@ public class PlayerController : MonoBehaviour
                             Moving(Input.GetAxis("Horizontal"));
                         }
 
-                        hSpeed = walkingSpeed;
+                        if (!gCheck.isGrounded)
+                        {
+                            hSpeed = airSpeed;
+                        }
+                        else
+                        {
+                            hSpeed = walkingSpeed;
+                        }
                     }
                 }
                 else
@@ -214,7 +236,7 @@ public class PlayerController : MonoBehaviour
             // Dashing
             if (!gCheck.isGrounded)
             {
-                if ((((Input.GetAxisRaw("Horizontal") < 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x < 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) >= 0.5f) && canDashLeft)
+                if ((((Input.GetAxisRaw("Horizontal") < 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x < 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) >= 0.5f || Input.GetKeyDown(KeyCode.D)) && canDashLeft)
                 {
                     isDashingL = true;
                     isDashingR = false;
@@ -230,7 +252,7 @@ public class PlayerController : MonoBehaviour
                     canDashRight = true;
                     canDashLeft = false;
                 }
-                else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f) && canDashRight)
+                else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f || Input.GetKeyDown(KeyCode.A)) && canDashRight)
                 {
                     isDashingR = true;
                     isDashingL = false;
@@ -270,8 +292,8 @@ public class PlayerController : MonoBehaviour
             // Wall Jumps
             if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpL && !isSameWall)
             {
-                WallJump(1);
                 canWallJumpL = false;
+                WallJump(1);
 
                 canDashRight = true;
                 canDashLeft = true;
@@ -282,8 +304,8 @@ public class PlayerController : MonoBehaviour
 
             if ((Input.GetButtonDown(pInput.jumpButton) || Input.GetAxis(pInput.rVertical) <= -0.5f) && canWallJumpR && !isSameWall)
             {
-                WallJump(-1);
                 canWallJumpR = false;
+                WallJump(-1);
 
                 canDashRight = true;
                 canDashLeft = true;
@@ -291,6 +313,7 @@ public class PlayerController : MonoBehaviour
 
                 hasDoubleJumped = true;
             }
+
         }
         else
         {
@@ -318,6 +341,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!canJump)
+        {
+            if (collision.otherCollider == wallBumpL || collision.otherCollider == wallBumpR)
+            {
+                WallStop();
+            }  
+        }
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         collidedWithAnything = true;
@@ -326,34 +360,12 @@ public class PlayerController : MonoBehaviour
         {
             if (collision.otherCollider == wallBumpL)
             {
-                /*
-                if (collision.collider != lastCol)
-                {
-                    isSameWall = false;
-                }
-                else
-                {
-                    isSameWall = true;
-                }
-                */
-
                 canDoubleJump = false;
                 canWallJumpL = true;
                 canWallJumpR = false;
             }
             else if (collision.otherCollider == wallBumpR)
             {
-                /*
-                if (collision.collider != lastCol)
-                {
-                    isSameWall = false;
-                }
-                else
-                {
-                    isSameWall = true;
-                }
-                */
-
                 canDoubleJump = false;
                 canWallJumpR = true;
                 canWallJumpL = false;
@@ -398,12 +410,19 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += Vector2.up * jumpSpeed;
     }
 
     public void DoubleJump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, doubleJumpSpeed);
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += Vector2.up * doubleJumpSpeed;
+    }
+
+    public void Fall()
+    {
+        rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
     }
 
     public void DownKick()
@@ -423,6 +442,13 @@ public class PlayerController : MonoBehaviour
 
     public void WallJump(float dir)
     {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity = new Vector2(rb.velocity.x + (wallJumpSpeedX * dir), wallJumpSpeedY);
     }
+
+    public void WallStop()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * wallJumpRatio);
+    }
+
 }

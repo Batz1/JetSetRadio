@@ -32,6 +32,8 @@ public class EnemyDetection : MonoBehaviour
 
     Rigidbody2D rb;
 
+    public PlayerController playercontrollerscript;
+    public Animator botAnimator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,7 +49,7 @@ public class EnemyDetection : MonoBehaviour
     {
         GroundCheck();
         RangeCheck();
-
+        
         if (inRange)
         {
             if (onGround)
@@ -86,6 +88,7 @@ public class EnemyDetection : MonoBehaviour
         if (collision.gameObject.CompareTag("playerProjectile"))
         {
             gameObject.SetActive(false);
+            playercontrollerscript.howManyDeadEnemies ++;
         }
     }
 
@@ -96,14 +99,17 @@ public class EnemyDetection : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
             rb.velocity = new Vector2(newTargetPos.normalized.x * speed, rb.velocity.y);
+            
         }
         else if (Vector2.Distance(transform.position, target.position) < stoppingDistance && Vector2.Distance(transform.position, target.position) > retreatDistance)
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
+            
         }
         else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
         {
             rb.velocity = new Vector2(-newTargetPos.normalized.x * speed, rb.velocity.y);
+            
         }
     }
 
@@ -186,4 +192,17 @@ public class EnemyDetection : MonoBehaviour
             inRange = false;
         }
     }
+
+
+    void readyToFireAnimation()
+    {
+        if (timeBtwShots >= 0)
+        {
+            botAnimator.SetBool("Loading", true);
+        }
+        else
+            botAnimator.SetBool("Loading", false);
+    }
+
+
 }

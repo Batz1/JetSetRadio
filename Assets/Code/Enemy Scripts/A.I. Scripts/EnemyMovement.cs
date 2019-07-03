@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float raycastDistance;
     private bool movingRight = true;
+    public float MaxSpeed;
     public Transform groundDetection; // Raycast ground detection
 
     void Update()
@@ -24,6 +25,28 @@ public class EnemyMovement : MonoBehaviour
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 movingRight = true;
+            }
+        }
+
+        if(speed >= MaxSpeed)
+        {
+            speed = MaxSpeed;
+        }
+    }
+
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Floor") == false || collision.gameObject.CompareTag("Player"))
+        {
+            
+            Destroy(collision.gameObject);
+
+            speed = speed + 2f;
+            if (speed >= MaxSpeed)
+            {
+                speed = MaxSpeed;
             }
         }
     }

@@ -11,11 +11,13 @@ public class Explosion : MonoBehaviour
     public float currentRadius = 0f;
     CircleCollider2D explosionRadius;
     [SerializeField] bool exoloded = false;
+    public GameObject resetCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
         explosionRadius = gameObject.GetComponent<CircleCollider2D>();
+        resetCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,7 +52,13 @@ public class Explosion : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             exoloded = true;
-            Destroy(collision.gameObject);
+            GameManager.instance.isPlayerAlive = false;
+            if (!GameManager.instance.isPlayerAlive)
+            {
+                resetCanvas.SetActive(true);
+            }
+            //Destroy(collision.gameObject);
+
         }
     }
 }

@@ -28,6 +28,32 @@ public class LevelData : ScriptableObject
     }
 
     [SerializeField]
+    private string levelRankKey;
+
+    public string LevelRankKey
+    {
+        get
+        {
+            return levelRankKey;
+        }
+    }
+
+    [SerializeField]
+    private int currentRank;
+
+    public int CurrentRank
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(LevelRankKey);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(LevelRankKey, value);
+        }
+    }
+
+    [SerializeField]
     private float rankS;
     
     public float RankS
@@ -71,15 +97,4 @@ public class LevelData : ScriptableObject
         }
     }
 
-    [SerializeField]
-    private float rankD;
-
-    public float RankD
-    {
-        get
-        {
-            return rankD;
-        }
-    }
-    
 }

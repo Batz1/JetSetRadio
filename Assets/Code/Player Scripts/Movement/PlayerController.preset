@@ -114,6 +114,10 @@ Preset:
     value: 6
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: wallJumpRatio
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: canJump
     value: 0
     objectReference: {fileID: 0}
@@ -127,6 +131,10 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: hasDoubleJumped
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: howManyDeadEnemies
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
