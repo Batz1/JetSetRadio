@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 956c3dee2b7256440ad6a83db2874e25
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2193665450984211348
+    second: EnemyHulkIdle4
+  - first:
+      213: -3067970658719653208
+    second: EnemyHulkIdle3
+  - first:
+      213: 4243072284754217687
+    second: EnemyHulkIdle2
+  - first:
+      213: -8983881606630479046
+    second: EnemyHulkIdle1
+  - first:
+      213: -6167987699618601973
+    second: EnemyHulkPush4
+  - first:
+      213: -3873439821827318012
+    second: EnemyHulkPush3
+  - first:
+      213: 6472416410285712783
+    second: EnemyHulkPush2
+  - first:
+      213: 283328484506190687
+    second: EnemyHulkPush1
+  - first:
+      213: 5854141814521349749
+    second: EnemyHulkDie1
+  - first:
+      213: 5607565879657886957
+    second: EnemyHulkDie2
+  - first:
+      213: -7212831012697606945
+    second: EnemyHulkDie3
+  - first:
+      213: -7135315782564713329
+    second: EnemyHulkDie4
+  - first:
+      213: -776665085042898986
+    second: EnemyHulkGrab1
+  - first:
+      213: 5587982030708815056
+    second: EnemyHulkGrab2
+  - first:
+      213: -5769488205595030088
+    second: EnemyHulkGrab3
+  - first:
+      213: -1467998293406196067
+    second: EnemyHulkGrab4
+  - first:
+      213: 519580850715876000
+    second: EnemyHulkGrab5
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyHulkIdle4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 350
+        width: 117
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c91acefd2c8e2842951b7e76fedd3cd
+      internalID: -2193665450984211348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkIdle3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 350
+        width: 115
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ee38b2555f9674f8d21ea2e5a94db7
+      internalID: -3067970658719653208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkIdle2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 350
+        width: 116
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3987c6b0f2793419467929cb1ba687
+      internalID: 4243072284754217687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkIdle1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 350
+        width: 117
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4caeb477c065a8409b2457d39f226c1
+      internalID: -8983881606630479046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkPush4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 240
+        width: 117
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7276028857cff4fa1db80efed9d958
+      internalID: -6167987699618601973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkPush3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 241
+        width: 122
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205a186990292fc428e663667e0328a8
+      internalID: -3873439821827318012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkPush2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 240
+        width: 116
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4593952a42c030c45b56a8c233b2a66e
+      internalID: 6472416410285712783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkPush1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 240
+        width: 117
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccecff2220fd8642936a0c027c49909
+      internalID: 283328484506190687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkDie1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 128
+        width: 115
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2715a0464259b02469b56516e4eae68c
+      internalID: 5854141814521349749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkDie2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 128
+        width: 105
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f51189ece354c4a84c9cbe93b89de5
+      internalID: 5607565879657886957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkDie3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 128
+        width: 114
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bffc983e65fad419a0661d4e48ad9f
+      internalID: -7212831012697606945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkDie4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 128
+        width: 138
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ac1e15b4dfc4f47a08ebaeb8e2404a
+      internalID: -7135315782564713329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkGrab1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 17
+        width: 117
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae3f7eda2c103e4a9454c17c84d15aa
+      internalID: -776665085042898986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkGrab2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 17
+        width: 121
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2055a6af674052a4daa67442fb476af0
+      internalID: 5587982030708815056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkGrab3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 17
+        width: 127
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7ace992b7c9454f907742ae1e21230
+      internalID: -5769488205595030088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkGrab4
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 17
+        width: 127
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f67fd594c49444396f374334acf644
+      internalID: -1467998293406196067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHulkGrab5
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 17
+        width: 131
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef48871ab67bdd4ea94f0583be06b15
+      internalID: 519580850715876000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 903d66c440fc94f40a41845207fc217c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

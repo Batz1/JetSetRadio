@@ -1,0 +1,959 @@
+fileFormatVersion: 2
+guid: 24137a9430cee8b4196857fab3b420f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8167289632278716491
+    second: LabPlatform
+  - first:
+      213: 5190856085540671167
+    second: LabWall
+  - first:
+      213: 1992396109404643403
+    second: Container1
+  - first:
+      213: 7995582419567877242
+    second: Container2
+  - first:
+      213: -2077403056939070993
+    second: Container3
+  - first:
+      213: -1060867226873965737
+    second: Container4
+  - first:
+      213: 6939529978579412555
+    second: DoorClosed
+  - first:
+      213: 660729306249374228
+    second: DoorOpen
+  - first:
+      213: 5679692479553765466
+    second: PipeVertical
+  - first:
+      213: -576009329811518344
+    second: Crate
+  - first:
+      213: 6299720291698204195
+    second: MachineSmall
+  - first:
+      213: 8393494270119663681
+    second: MachineMedium
+  - first:
+      213: -8040372729620929179
+    second: CrateSmall
+  - first:
+      213: -2922314484318358686
+    second: Window
+  - first:
+      213: -370828398338998614
+    second: LabItems_14
+  - first:
+      213: 5759062520549092379
+    second: CrateBunch1
+  - first:
+      213: 5725309451543377499
+    second: MachineBig
+  - first:
+      213: -6997612764767787875
+    second: CrateBunch2
+  - first:
+      213: -8380213415797037019
+    second: LabFans
+  - first:
+      213: 589164275303586434
+    second: LabItems_19
+  - first:
+      213: -8362579065254180254
+    second: LabItems_20
+  - first:
+      213: 5884200197447675464
+    second: LabElectricBox
+  - first:
+      213: -245215057619052675
+    second: PipeHorizontal
+  - first:
+      213: 2924893567600776883
+    second: LabAirVent1
+  - first:
+      213: 2275246520311494662
+    second: LabAirVent2
+  - first:
+      213: -2239576554137548002
+    second: LabAirVent3
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LabPlatform
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 398
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      physicsShape: []
+      tessellationDetail: 0.54
+      bones: []
+      spriteID: 587b234ed6b655e42b6284973913ca0c
+      internalID: 8167289632278716491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabWall
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 397
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f148cdc6c92a8e843a3cbf18f689498b
+      internalID: 5190856085540671167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Container1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 365
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc31db8637d0824b8f1263b5fd1acaf
+      internalID: 1992396109404643403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Container2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 365
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a10840557d2de645b240c44b0c79855
+      internalID: 7995582419567877242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Container3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 365
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354a5150d579bd4b9c6c085a6e26b0c
+      internalID: -2077403056939070993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Container4
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 365
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147e71099585ac34b92260ebdc5e2a1a
+      internalID: -1060867226873965737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorClosed
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 324
+        width: 151
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae481a3ec8a7e0418d96e656e43ac44
+      internalID: 6939529978579412555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoorOpen
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 324
+        width: 188
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a81ec38628b4184d858a7465c1ae0ea
+      internalID: 660729306249374228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PipeVertical
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 6
+        width: 86
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: -197.5}
+        - {x: 40, y: -162.5}
+        - {x: 43, y: -162.5}
+        - {x: 43, y: -152.5}
+        - {x: 40, y: -152.5}
+        - {x: 40, y: -98.5}
+        - {x: 43, y: -98.5}
+        - {x: 43, y: -88.5}
+        - {x: 40, y: -88.5}
+        - {x: 40, y: -34.5}
+        - {x: 43, y: -34.5}
+        - {x: 43, y: -24.5}
+        - {x: 40, y: -24.5}
+        - {x: 40, y: 0.5}
+        - {x: 39, y: 3.5}
+        - {x: 36, y: 6.5}
+        - {x: 33, y: 7.5}
+        - {x: 8, y: 7.5}
+        - {x: 8, y: 10.5}
+        - {x: 6, y: 12.5}
+        - {x: -6, y: 12.5}
+        - {x: -8, y: 10.5}
+        - {x: -8, y: 7.5}
+        - {x: -24, y: 7.5}
+        - {x: -24, y: 23.5}
+        - {x: -21, y: 23.5}
+        - {x: -19, y: 25.5}
+        - {x: -19, y: 31.5}
+        - {x: -21, y: 33.5}
+        - {x: -24, y: 33.5}
+        - {x: -24, y: 87.5}
+        - {x: -21, y: 87.5}
+        - {x: -19, y: 89.5}
+        - {x: -19, y: 95.5}
+        - {x: -21, y: 97.5}
+        - {x: -24, y: 97.5}
+        - {x: -24, y: 151.5}
+        - {x: -21, y: 151.5}
+        - {x: -19, y: 153.5}
+        - {x: -19, y: 159.5}
+        - {x: -21, y: 161.5}
+        - {x: -24, y: 161.5}
+        - {x: -24, y: 196.5}
+        - {x: -21, y: 200.5}
+        - {x: -21, y: 206.5}
+        - {x: -22, y: 209.5}
+        - {x: -26, y: 212.5}
+        - {x: -38, y: 212.5}
+        - {x: -42, y: 209.5}
+        - {x: -43, y: 206.5}
+        - {x: -43, y: 200.5}
+        - {x: -40, y: 196.5}
+        - {x: -40, y: 161.5}
+        - {x: -43, y: 161.5}
+        - {x: -43, y: 151.5}
+        - {x: -40, y: 151.5}
+        - {x: -40, y: 97.5}
+        - {x: -43, y: 97.5}
+        - {x: -43, y: 87.5}
+        - {x: -40, y: 87.5}
+        - {x: -40, y: 33.5}
+        - {x: -43, y: 33.5}
+        - {x: -43, y: 23.5}
+        - {x: -40, y: 23.5}
+        - {x: -40, y: 1.5}
+        - {x: -38, y: -3.5}
+        - {x: -35, y: -6.5}
+        - {x: -30, y: -8.5}
+        - {x: -8, y: -8.5}
+        - {x: -8, y: -11.5}
+        - {x: -6, y: -13.5}
+        - {x: 6, y: -13.5}
+        - {x: 8, y: -11.5}
+        - {x: 8, y: -8.5}
+        - {x: 24, y: -8.5}
+        - {x: 24, y: -24.5}
+        - {x: 21, y: -24.5}
+        - {x: 19, y: -26.5}
+        - {x: 19, y: -32.5}
+        - {x: 21, y: -34.5}
+        - {x: 24, y: -34.5}
+        - {x: 24, y: -88.5}
+        - {x: 21, y: -88.5}
+        - {x: 19, y: -90.5}
+        - {x: 19, y: -96.5}
+        - {x: 21, y: -98.5}
+        - {x: 24, y: -98.5}
+        - {x: 24, y: -152.5}
+        - {x: 21, y: -152.5}
+        - {x: 19, y: -154.5}
+        - {x: 19, y: -160.5}
+        - {x: 21, y: -162.5}
+        - {x: 24, y: -162.5}
+        - {x: 24, y: -197.5}
+        - {x: 21, y: -201.5}
+        - {x: 21, y: -207.5}
+        - {x: 22, y: -210.5}
+        - {x: 25, y: -212.5}
+        - {x: 39, y: -212.5}
+        - {x: 42, y: -210.5}
+        - {x: 43, y: -207.5}
+        - {x: 43, y: -201.5}
+      physicsShape: []
+      tessellationDetail: 0.81
+      bones: []
+      spriteID: 6df9df3db4c904d4f90df4dc6883f8b0
+      internalID: 5679692479553765466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crate
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 338
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fee4472ddf003b4babd623e6e0a1d47
+      internalID: -576009329811518344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineSmall
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 288
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.5, y: 32.5}
+        - {x: -24.5, y: 32.5}
+        - {x: -42.5, y: -4.5}
+        - {x: -42.5, y: -32.5}
+        - {x: 42.5, y: -32.5}
+        - {x: 42.5, y: -11.5}
+      physicsShape: []
+      tessellationDetail: 0.3
+      bones: []
+      spriteID: 81c7d90ebd1842e438a0d6d98b71f602
+      internalID: 6299720291698204195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineMedium
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 288
+        width: 130
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd8c7b9ea46b9c44a98aebbef7a9832
+      internalID: 8393494270119663681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrateSmall
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 288
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba1dc329f52ffd458291fd31d6c3e3b
+      internalID: -8040372729620929179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 144
+        width: 155
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.5, y: -36.5}
+        - {x: 64.5, y: 5.5}
+        - {x: 66.5, y: 7.5}
+        - {x: 68.5, y: 12.5}
+        - {x: 77.5, y: 22.5}
+        - {x: 77.5, y: 80.5}
+        - {x: -3.5, y: 80.5}
+        - {x: -12.5, y: 71.5}
+        - {x: -12.5, y: 54.5}
+        - {x: -77.5, y: -74.5}
+        - {x: -77.5, y: -80.5}
+        - {x: 20.5, y: -80.5}
+        - {x: 30.5, y: -59.5}
+        - {x: 32.5, y: -57.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: d10ed9c656f8a784a923bec986351328
+      internalID: -2922314484318358686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrateBunch1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 212
+        width: 114
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 1.5}
+        - {x: 31, y: 1.5}
+        - {x: 30, y: 2.5}
+        - {x: 24, y: 2.5}
+        - {x: 24, y: 19.5}
+        - {x: 22, y: 21.5}
+        - {x: 8, y: 21.5}
+        - {x: 8, y: 30.5}
+        - {x: -39, y: 30.5}
+        - {x: -39, y: 1.5}
+        - {x: -41, y: 2.5}
+        - {x: -57, y: 2.5}
+        - {x: -57, y: -30.5}
+        - {x: 57, y: -30.5}
+        - {x: 57, y: 2.5}
+        - {x: 39, y: 2.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 826222822a8446840a8456775c258e33
+      internalID: 5759062520549092379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineBig
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 82
+        width: 196
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: -30.5}
+        - {x: 79, y: -28.5}
+        - {x: 35, y: -28.5}
+        - {x: 23, y: -16.5}
+        - {x: 23, y: -15.5}
+        - {x: 21, y: -13.5}
+        - {x: 21, y: 36.5}
+        - {x: 23, y: 39.5}
+        - {x: 23, y: 45.5}
+        - {x: 21, y: 48.5}
+        - {x: 21, y: 78.5}
+        - {x: 23, y: 80.5}
+        - {x: 23, y: 81.5}
+        - {x: 36, y: 94.5}
+        - {x: 36, y: 95.5}
+        - {x: -38, y: 95.5}
+        - {x: -37, y: 92.5}
+        - {x: -33, y: 92.5}
+        - {x: -22, y: 80.5}
+        - {x: -20, y: 78.5}
+        - {x: -20, y: 48.5}
+        - {x: -22, y: 45.5}
+        - {x: -22, y: 39.5}
+        - {x: -20, y: 36.5}
+        - {x: -20, y: -13.5}
+        - {x: -22, y: -15.5}
+        - {x: -22, y: -16.5}
+        - {x: -33, y: -27.5}
+        - {x: -36, y: -27.5}
+        - {x: -37, y: -28.5}
+        - {x: -78, y: -28.5}
+        - {x: -80, y: -30.5}
+        - {x: -80, y: -59.5}
+        - {x: -98, y: -68.5}
+        - {x: -98, y: -95.5}
+        - {x: 98, y: -95.5}
+        - {x: 98, y: -68.5}
+        - {x: 81, y: -59.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 61e015336a3d7114a97f87f6a5212b66
+      internalID: 5725309451543377499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrateBunch2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 156
+        width: 117
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: 0.5}
+        - {x: 45.5, y: 2.5}
+        - {x: 27.5, y: 2.5}
+        - {x: 27.5, y: 30.5}
+        - {x: -19.5, y: 30.5}
+        - {x: -19.5, y: 15.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -22.5, y: 14.5}
+        - {x: -37.5, y: 14.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -58.5, y: 15.5}
+        - {x: -58.5, y: -30.5}
+        - {x: 58.5, y: -30.5}
+        - {x: 58.5, y: -8.5}
+        - {x: 47.5, y: -8.5}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: a1a12b154a7ce0b46a074f75dcf68315
+      internalID: -6997612764767787875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabFans
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 114
+        width: 93
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4edaed5eb6c81141947712444da1cee
+      internalID: -8380213415797037019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabElectricBox
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 69
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216eb5010ae99444586bf5fc0a4dc358
+      internalID: 5884200197447675464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PipeHorizontal
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 53
+        width: 425
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97.5, y: -43}
+        - {x: -87.5, y: -43}
+        - {x: -87.5, y: -40}
+        - {x: -33.5, y: -40}
+        - {x: -33.5, y: -43}
+        - {x: -23.5, y: -43}
+        - {x: -23.5, y: -40}
+        - {x: -1.5, y: -40}
+        - {x: 3.5, y: -38}
+        - {x: 6.5, y: -35}
+        - {x: 8.5, y: -30}
+        - {x: 8.5, y: -8}
+        - {x: 11.5, y: -8}
+        - {x: 13.5, y: -6}
+        - {x: 13.5, y: 6}
+        - {x: 11.5, y: 8}
+        - {x: 8.5, y: 8}
+        - {x: 8.5, y: 24}
+        - {x: 24.5, y: 24}
+        - {x: 24.5, y: 21}
+        - {x: 26.5, y: 19}
+        - {x: 32.5, y: 19}
+        - {x: 34.5, y: 21}
+        - {x: 34.5, y: 24}
+        - {x: 88.5, y: 24}
+        - {x: 88.5, y: 21}
+        - {x: 90.5, y: 19}
+        - {x: 96.5, y: 19}
+        - {x: 98.5, y: 21}
+        - {x: 98.5, y: 24}
+        - {x: 152.5, y: 24}
+        - {x: 152.5, y: 21}
+        - {x: 154.5, y: 19}
+        - {x: 160.5, y: 19}
+        - {x: 162.5, y: 21}
+        - {x: 162.5, y: 24}
+        - {x: 197.5, y: 24}
+        - {x: 201.5, y: 21}
+        - {x: 207.5, y: 21}
+        - {x: 210.5, y: 22}
+        - {x: 212.5, y: 25}
+        - {x: 212.5, y: 39}
+        - {x: 210.5, y: 42}
+        - {x: 207.5, y: 43}
+        - {x: 201.5, y: 43}
+        - {x: 197.5, y: 40}
+        - {x: 162.5, y: 40}
+        - {x: 162.5, y: 43}
+        - {x: 152.5, y: 43}
+        - {x: 152.5, y: 40}
+        - {x: 98.5, y: 40}
+        - {x: 98.5, y: 43}
+        - {x: 88.5, y: 43}
+        - {x: 88.5, y: 40}
+        - {x: 34.5, y: 40}
+        - {x: 34.5, y: 43}
+        - {x: 24.5, y: 43}
+        - {x: 24.5, y: 40}
+        - {x: -0.5, y: 40}
+        - {x: -3.5, y: 39}
+        - {x: -6.5, y: 36}
+        - {x: -7.5, y: 33}
+        - {x: -7.5, y: 8}
+        - {x: -10.5, y: 8}
+        - {x: -12.5, y: 6}
+        - {x: -12.5, y: -6}
+        - {x: -10.5, y: -8}
+        - {x: -7.5, y: -8}
+        - {x: -7.5, y: -24}
+        - {x: -23.5, y: -24}
+        - {x: -23.5, y: -21}
+        - {x: -25.5, y: -19}
+        - {x: -31.5, y: -19}
+        - {x: -33.5, y: -21}
+        - {x: -33.5, y: -24}
+        - {x: -87.5, y: -24}
+        - {x: -87.5, y: -21}
+        - {x: -89.5, y: -19}
+        - {x: -95.5, y: -19}
+        - {x: -97.5, y: -21}
+        - {x: -97.5, y: -24}
+        - {x: -151.5, y: -24}
+        - {x: -151.5, y: -21}
+        - {x: -153.5, y: -19}
+        - {x: -159.5, y: -19}
+        - {x: -161.5, y: -21}
+        - {x: -161.5, y: -24}
+        - {x: -196.5, y: -24}
+        - {x: -200.5, y: -21}
+        - {x: -206.5, y: -21}
+        - {x: -209.5, y: -22}
+        - {x: -212.5, y: -26}
+        - {x: -212.5, y: -38}
+        - {x: -209.5, y: -42}
+        - {x: -206.5, y: -43}
+        - {x: -200.5, y: -43}
+        - {x: -196.5, y: -40}
+        - {x: -161.5, y: -40}
+        - {x: -161.5, y: -43}
+        - {x: -151.5, y: -43}
+        - {x: -151.5, y: -40}
+        - {x: -97.5, y: -40}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 74c72ff046f6df442b9e6ef8106f4d7c
+      internalID: -245215057619052675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabAirVent1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 82
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872a4d2bbcf56ef44a25237d4ef85533
+      internalID: 2924893567600776883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabAirVent2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 96
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f07cbda6d758cf4bbb58b67f402f3fc
+      internalID: 2275246520311494662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabAirVent3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 69
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24978c0fca296f843852aeb9b74a6ca8
+      internalID: -2239576554137548002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 58e103a61faa064498240b559001dc29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
