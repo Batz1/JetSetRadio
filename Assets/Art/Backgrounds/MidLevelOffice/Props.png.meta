@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 24ac01fe3a9fbc44a99a2bbb58682828
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7493446075263850405
+    second: Poster1
+  - first:
+      213: -3024759822866218911
+    second: Desk1
+  - first:
+      213: 7779792928685786893
+    second: Cabin1x3
+  - first:
+      213: -5918809692936064203
+    second: Poster2
+  - first:
+      213: 7498718905979570132
+    second: Poster3
+  - first:
+      213: 1551743488239039256
+    second: Desk3
+  - first:
+      213: -1344804910068313731
+    second: Desk4
+  - first:
+      213: 6343298520584839021
+    second: CabinPlant
+  - first:
+      213: 8065835470982657247
+    second: DeskSingle1
+  - first:
+      213: -1231521952582654201
+    second: Poster5
+  - first:
+      213: 5499674895320258051
+    second: Cabin1x1
+  - first:
+      213: -1447939790034468974
+    second: Cabin1x2
+  - first:
+      213: -7222676000795327311
+    second: Poster4
+  - first:
+      213: 8071670770927804057
+    second: DeskSingle2
+  - first:
+      213: 7232012926369543165
+    second: DeskSingle3
+  - first:
+      213: -3429753330676762978
+    second: Plant
+  - first:
+      213: 2869461961419494678
+    second: Props_75
+  - first:
+      213: -73675770347461174
+    second: Props_88
+  - first:
+      213: -1117677603969713723
+    second: Props_89
+  - first:
+      213: -8227803171559062166
+    second: Props_112
+  - first:
+      213: -1786237633433955880
+    second: Props_113
+  - first:
+      213: -2009559745330195271
+    second: Props_114
+  - first:
+      213: -7748430543768447964
+    second: Props_115
+  - first:
+      213: 5726890576329517732
+    second: Props_116
+  - first:
+      213: -4130006644256348106
+    second: Props_117
+  - first:
+      213: 3782326033864590280
+    second: Props_118
+  - first:
+      213: -1600966582578833081
+    second: Props_119
+  - first:
+      213: 4721647201281770806
+    second: Props_120
+  - first:
+      213: -3721892665981937114
+    second: Props_121
+  - first:
+      213: -3344188076987557078
+    second: Props_122
+  - first:
+      213: -3166688732026418764
+    second: Props_123
+  - first:
+      213: -8104801018861199981
+    second: Props_124
+  - first:
+      213: 6393168456090996047
+    second: Props_125
+  - first:
+      213: -3389390830883457464
+    second: Props_126
+  - first:
+      213: -3627119644470554247
+    second: Props_127
+  - first:
+      213: -840682215135924783
+    second: Props_128
+  - first:
+      213: 6480178231135101775
+    second: Props_129
+  - first:
+      213: -1473610303641744901
+    second: Props_130
+  - first:
+      213: 4043726958046336269
+    second: Props_131
+  - first:
+      213: -7317850803574182000
+    second: Props_132
+  - first:
+      213: -4758239144357463195
+    second: Props_133
+  - first:
+      213: -6938104029674308651
+    second: Desk2
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Poster1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 572
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de552c5c8e31449438ce7ff33fb51504
+      internalID: -7493446075263850405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 526
+        width: 152
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7618b5095b34b4343827d2e0a8d7b464
+      internalID: -3024759822866218911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin1x3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 526
+        width: 77
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b559849b5b0e43a49b2eaab96801ae32
+      internalID: 7779792928685786893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poster2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 567
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3a2235aaf9525448912e098cc599b5
+      internalID: -5918809692936064203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poster3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 567
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1e8c30e9f1dc447a25d20f558e6e7f
+      internalID: 7498718905979570132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 526
+        width: 152
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194c334e134f7984a853b3931b10318e
+      internalID: 1551743488239039256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk4
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 526
+        width: 153
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ccfab385191cf4f978e6189b34b16a
+      internalID: -1344804910068313731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabinPlant
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 526
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d9c9fc63ed15a43bdcd1723065c27e
+      internalID: 6343298520584839021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeskSingle1
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 526
+        width: 91
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50539c2dd5635c4c884b438682f0f2f
+      internalID: 8065835470982657247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poster5
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 571
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc224db67ed9d25469059a8fb147c161
+      internalID: -1231521952582654201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin1x1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 526
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc2cd854a33a4f4380c4f64d734eb20
+      internalID: 5499674895320258051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin1x2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 526
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c3fa092548f949891a620b398b322
+      internalID: -1447939790034468974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poster4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 389
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d1244a4a9d51840a33515a593a2a66
+      internalID: -7222676000795327311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeskSingle2
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 348
+        width: 91
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955ca9b3940d6f4fb229ef5623abee8
+      internalID: 8071670770927804057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeskSingle3
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 348
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab0c2685b4696740ac13d0037e73b2f
+      internalID: 7232012926369543165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 348
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f4ce9ebb4afd44da16e34ffa6dd59d
+      internalID: -3429753330676762978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desk2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 526
+        width: 152
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d631eb39358030a44863b4f883444de2
+      internalID: -6938104029674308651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d545477307b41e74f91e11ae977e4aa4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
