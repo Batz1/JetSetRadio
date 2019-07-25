@@ -17,8 +17,8 @@ public class PlayerAfterimage : MonoBehaviour
     void Update()
     {
         transform.localScale = new Vector2(controller.playerSprite.transform.localScale.x, 2);
-
-        if (controller.rb.velocity.x > controller.speedLimit + 0.5f || controller.rb.velocity.x < -controller.speedLimit - 0.5f)
+ 
+        if ((controller.rb.velocity.x > controller.speedLimit + 0.5f || controller.rb.velocity.x < -controller.speedLimit - 0.5f) || (controller.rb.velocity.y > controller.speedLimit + 0.5f || controller.rb.velocity.y < -controller.speedLimit - 0.5f))
         {
             afterimage.Play();
         }

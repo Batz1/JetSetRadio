@@ -6,6 +6,7 @@ public class BreakableObstacles : MonoBehaviour
 {
 
     Rigidbody2D playerRB2d;
+    [SerializeField] private ParticleSystem ps;
     public float velocityX;
     public float velocityY;
 
@@ -14,6 +15,7 @@ public class BreakableObstacles : MonoBehaviour
     void Start()
     {
         playerRB2d = GameManager.instance.currentPlayer.GetComponent<Rigidbody2D>();
+        ps = GetComponent<ParticleSystem>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +34,7 @@ public class BreakableObstacles : MonoBehaviour
         }
         else
         {
-            Debug.Log(playerRB2d.velocity.x);
+            ps.Emit(2);
         }
     }
 }

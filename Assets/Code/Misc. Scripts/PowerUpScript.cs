@@ -21,7 +21,7 @@ public class PowerUpScript : MonoBehaviour
     {
         //Instantiate(pickUpEffect, transform.position, transform.rotation);
         PlayerController jumpSpeedX = player.GetComponent<PlayerController>();
-        jumpSpeedX.jumpSpeed += 3;
+        jumpSpeedX.DoubleJump();
         Debug.Log("Power Up picked");
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;

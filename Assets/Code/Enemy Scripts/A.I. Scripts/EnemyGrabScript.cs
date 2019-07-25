@@ -4,9 +4,22 @@ using UnityEngine;
 
 public class EnemyGrabScript : MonoBehaviour
 {
-    private bool _playerPhysicIsStatic = false; //
+
     [SerializeField] private PlayerController playerScript;
+    [SerializeField] float rotateSpeed = 0.5f;
+    CamShake cs;
     private int dashCount = 0;
+    public int dashLimit;
+    private bool _playerPhysicIsStatic = false;
+
+    public float ampGain;
+    public float freqGain;
+    public float duration;
+
+    void Start()
+    {
+        cs = GameManager.instance.cs;
+    }
 
     void Update()
     {
@@ -19,14 +32,14 @@ public class EnemyGrabScript : MonoBehaviour
             {
                 dashCount++;
                 Debug.Log(dashCount);
-                if(dashCount>=5)
+
+                if(dashCount>=dashLimit)
                 {
                     PlayerController _playerPhysic = FindObjectOfType<PlayerController>();
                     _playerPhysic.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                     _playerPhysicIsStatic = false;
                 }
             }
-
         }
     }
 
@@ -37,6 +50,7 @@ public class EnemyGrabScript : MonoBehaviour
             PlayerController _playerPhysic = FindObjectOfType<PlayerController>();
             _playerPhysic.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             _playerPhysicIsStatic = true;
+            StartCoroutine(cs.Shake(ampGain, freqGain, duration));
         }
     }
 }

@@ -12,7 +12,14 @@ public class LaserSide : MonoBehaviour
 	private GameObject middle;
 	private GameObject end;
 
-	void Update()
+    public Collider2D[] colliders;
+
+    private void OnDrawGizmos()
+    {
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.right), Color.red, 1);
+    }
+
+    void Update()
 	{
 
 		// Create the laser start from the prefab
@@ -80,6 +87,5 @@ public class LaserSide : MonoBehaviour
 		{
 			end.transform.localPosition = new Vector2(currentLaserSize, 0f);
 		}
-
-	}
+    }
 }

@@ -28,6 +28,7 @@ public class PlayerAnimation : MonoBehaviour
         if (!GameManager.instance.isPlayerAlive)
         {
             anim.SetBool("isDead", true);
+            anim.ResetTrigger("pressedJump");
         }
         else
         {
@@ -38,13 +39,19 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (pc.canDoubleJump || pc.canJump)
             {
-                anim.SetTrigger("pressedJump");
+                if (GameManager.instance.isPlayerAlive)
+                {
+                    anim.SetTrigger("pressedJump");
+                }
             }
         }
 
         if (pc.jumpPressRemember > 0 && pc.canJump)
         {
-            anim.SetTrigger("pressedJump");
+            if (GameManager.instance.isPlayerAlive)
+            {
+                anim.SetTrigger("pressedJump");
+            }
         }
     }
 }

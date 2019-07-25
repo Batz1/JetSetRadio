@@ -8,18 +8,32 @@ public class BulletDeflect : MonoBehaviour
     public Collider2D colL;
     public Collider2D colR;
 
+    CamShake cs;
+
     public ParticleSystem burstL;
+    public ParticleSystem circleL;
     public ParticleSystem burstR;
+    public ParticleSystem circleR;
 
     public string projectileTag;
 
     float[] timeTick;
     public float timeTickMax;
 
-    // Start is called before the first frame update
+    public float amplitudeGain;
+    public float frequencyGain;
+    public float duration;
+
+
     void Awake()
     {
         timeTick = new float[2];
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        cs = GameManager.instance.cs;
     }
 
     // Update is called once per frame
@@ -31,7 +45,7 @@ public class BulletDeflect : MonoBehaviour
         }
         else
         {
-            colR.enabled = false;
+            //colR.enabled = false;
         }
 
         if (timeTick[1] >= 0)
@@ -40,22 +54,26 @@ public class BulletDeflect : MonoBehaviour
         }
         else
         {
-            colL.enabled = false;
+           //colL.enabled = false;
         }
 
         if (co.isDashingL)
         {
-            colR.enabled = true;
-            colL.enabled = false;
+            StartCoroutine(cs.Shake(amplitudeGain, frequencyGain, duration));
+            //colR.enabled = true;
+            //colL.enabled = false;
             burstL.Play();
+            circleL.Play();
             timeTick[0] = timeTickMax;
         }
 
         if (co.isDashingR)
         {
-            colL.enabled = true;
-            colR.enabled = false;
+            StartCoroutine(cs.Shake(amplitudeGain, frequencyGain, duration));
+            //colL.enabled = true;
+            //colR.enabled = false;
             burstR.Play();
+            circleR.Play();
             timeTick[1] = timeTickMax;
         }
     }

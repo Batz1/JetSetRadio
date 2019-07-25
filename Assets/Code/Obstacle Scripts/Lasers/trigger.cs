@@ -11,13 +11,21 @@ public class trigger : MonoBehaviour
     public TextMeshProUGUI text;
 
     public float lTime;
-    float realLtime;
-    bool isPressed = false;
+    public float realLtime;
+    [SerializeField] float startToFlicker = 1.5f;
+    public bool isPressed = false;
+
+    public trigger[] t;
 
     // Start is called before the first frame update
     void Start()
     {
         realLtime = 0;
+        t = new trigger[GameManager.instance.switches.Length];
+        for(int i = 0; i < GameManager.instance.switches.Length; i++)
+        {
+            t[i] = GameManager.instance.switches[i].GetComponent<trigger>();
+        }
     }
 
     // Update is called once per frame
@@ -44,23 +52,53 @@ public class trigger : MonoBehaviour
             if (!isPressed)
             {
                 LaserFolder.SetActive(false);
-                Debug.Log("Quick! the lasers are down!");
                 StartCoroutine(startLaser());
                 isPressed = true;
+                SetAllOtherTriggers();
             }
             else
             {
-                Debug.Log("Wait a few seconds dumbass");
+                StopCoroutine(startLaser());
+                realLtime = lTime;
+                StartCoroutine(startLaser());
             }
         }
     }
 
     IEnumerator startLaser()
     {
-        yield return new WaitForSeconds(lTime);
+        while(realLtime > 0)
+        {
+            yield return null;
+            if(startToFlicker>realLtime)
+            {
+                LaserFolder.SetActive(!LaserFolder.activeInHierarchy);
+                SetAllCollidersStatus(false);
+            }
+        }
+
         LaserFolder.SetActive(true);
+        SetAllCollidersStatus(true);
         Debug.Log("Alarm is active");
         isPressed = false;
     }
-    
+
+    public void SetAllCollidersStatus(bool active)
+    {
+        foreach (Collider2D c in LaserFolder.GetComponentsInChildren<Collider2D>(true))
+        {
+            c.enabled = active;
+        }
+    }
+
+    public void SetAllOtherTriggers()
+    {
+        for(int i = 0; i < t.Length; i++)
+        {
+            if(t[i] != this)
+            {
+                t[i].isPressed = false;
+            }
+        }
+    }
 }

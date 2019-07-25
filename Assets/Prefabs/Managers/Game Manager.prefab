@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3778797626104367286}
   - component: {fileID: 3778797626104367285}
+  - component: {fileID: 8801044759173050121}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -44,5 +45,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 0}
-  allProjectiles: []
-  projectileCount: 0
+  phd: {fileID: 0}
+  timeManager: {fileID: 0}
+  cs: {fileID: 0}
+  isPlayerAlive: 0
+  hasFinishdLevel: 0
+  nameNextLevel: First Playable Level 2
+  nextLevelIndex: 2
+--- !u!114 &8801044759173050121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778797626104367284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4fbf890508cbc4db50f8c9dda18e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCam: {fileID: 0}
+  winCam: {fileID: 0}
+  waitDuration: 2
+  waitDuration2: 0.95
+  timer: {fileID: 0}

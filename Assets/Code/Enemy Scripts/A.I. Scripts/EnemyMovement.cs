@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] float raycastDistance;
     private bool movingRight = true;
     public float MaxSpeed;
+    public float speedAdd;
     public Transform groundDetection; // Raycast ground detection
 
     void Update()
@@ -38,12 +39,16 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Floor") == false || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            
+            PlayerHitDetection phd = GameManager.instance.phd;
+            phd.GetHit(collision.collider);
+        }
+        else if(collision.gameObject.CompareTag("Floor") == false)
+        {
             Destroy(collision.gameObject);
+            speed += speedAdd;
 
-            speed = speed + 2f;
             if (speed >= MaxSpeed)
             {
                 speed = MaxSpeed;

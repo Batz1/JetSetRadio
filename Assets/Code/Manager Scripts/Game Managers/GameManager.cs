@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using FMOD;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject currentPlayer;
     public PlayerHitDetection phd;
     public TimeManager timeManager;
+    public CamShake cs;
 
     public bool isPlayerAlive;
     public bool hasFinishdLevel;
@@ -32,12 +33,18 @@ public class GameManager : MonoBehaviour
     public string nameNextLevel = "First Playable Level 2";
     public int nextLevelIndex = 2;
 
+    public GameObject[] switches;
+    public GameObject[] slowMotionTriggers;
+
     // Start is called before the first frame update
     void Start()
     {
         hasFinishdLevel = false;
         isPlayerAlive = true;
         Time.timeScale = 1;
+
+        switches = GameObject.FindGameObjectsWithTag("Switch");
+        slowMotionTriggers = GameObject.FindGameObjectsWithTag("SlowMotion");
     }
 
     // Update is called once per frame
@@ -59,4 +66,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelReached", nextLevelIndex);
     }
+
 }

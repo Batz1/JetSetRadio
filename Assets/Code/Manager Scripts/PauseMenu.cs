@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    private int currentSceneIndex;
 
     // Update is called once per frame
     void Update()
@@ -40,8 +41,12 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Main Menu");
+        /*Time.timeScale = 1f;
+        SceneManager.LoadScene("Main Menu");*/
     }
 
 

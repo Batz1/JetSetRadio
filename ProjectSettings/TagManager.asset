@@ -18,6 +18,12 @@ TagManager:
   - doorSwitch
   - Split
   - Floor
+  - CM
+  - SlowMotion
+  - Enemy1
+  - Enemy2
+  - Grandma
+  - Switch
   layers:
   - Default
   - TransparentFX

@@ -5,23 +5,19 @@ using UnityEngine;
 public class Split : MonoBehaviour
 {
     EnemySplit enemySplit;
+    [SerializeField] GameObject normalGrambot;
+
+    
     void Start()
     {
-        enemySplit = FindObjectOfType<EnemySplit>();
+        enemySplit = GetComponentInParent<EnemySplit>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            enemySplit.SplitEnemy();
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(enemySplit.gameObject);
+            enemySplit.SplitEnemy();
+            Destroy(normalGrambot.gameObject, 0.2f);
         }
     }
 }

@@ -55,10 +55,16 @@ public class PlayerController : MonoBehaviour
     public float wallJumpSpeedY;
     [Range(0f, 1f)]
     public float wallJumpRatio;
+    [Header("Wall run variables")]
+    public float wallRunSpeed;
+    public bool canWallRun;
+    public float wallRunCooldownTimer;
+    float wallRunDuration;
 
     [Header("Jump Booleans")]
     public bool canJump = true;
     public bool canDoubleJump = false;
+    [HideInInspector] public bool isDoubleJumping = false;
     public bool collidedWithAnything = false;
     [HideInInspector] public bool hasDoubleJumped = false;
 
@@ -72,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash Booleans")]
     public bool canDashDown = false;
+    [HideInInspector] public bool isDashingDown = false;
     [HideInInspector] public bool hasDashedDown = false;
     public bool canDashLeft = true;
     [HideInInspector] public bool isDashingL = false;
@@ -94,6 +101,15 @@ public class PlayerController : MonoBehaviour
         if (!collidedWithAnything)
         {
             gCheck.isGrounded = false;
+        }
+
+        if(wallRunDuration > 0)
+        {
+            wallRunDuration -= Time.deltaTime;
+        }
+        else
+        {
+            canWallRun = false;
         }
 
         if (GameManager.instance.isPlayerAlive)
@@ -124,7 +140,19 @@ public class PlayerController : MonoBehaviour
                     canJump = false;
                     canDoubleJump = false;
                     hasDoubleJumped = true;
+
+                    isDoubleJumping = true;
+
+                    canWallRun = false;
                 }
+                else
+                {
+                    isDoubleJumping = false;
+                }
+            }
+            else
+            {
+                isDoubleJumping = false;
             }
 
             if (jumpPressRemember > 0 && canJump)
@@ -251,6 +279,9 @@ public class PlayerController : MonoBehaviour
                     }
                     canDashRight = true;
                     canDashLeft = false;
+
+                    canWallRun = true;
+                    wallRunDuration = wallRunCooldownTimer;
                 }
                 else if ((((Input.GetAxisRaw("Horizontal") > 0f || (Input.GetAxisRaw("Horizontal") == 0f && rb.velocity.x > 0)) && Input.GetButtonDown(pInput.dashButton)) || Input.GetAxis(pInput.rHorizontal) <= -0.5f || Input.GetKeyDown(KeyCode.A)) && canDashRight)
                 {
@@ -267,6 +298,9 @@ public class PlayerController : MonoBehaviour
                     }
                     canDashRight = false;
                     canDashLeft = true;
+
+                    canWallRun = true;
+                    wallRunDuration = wallRunCooldownTimer;
                 }
                 else
                 {
@@ -287,6 +321,14 @@ public class PlayerController : MonoBehaviour
                 DownKick();
                 canDashDown = false;
                 hasDashedDown = true;
+
+                canWallRun = false;
+
+                isDashingDown = true;
+            }
+            else
+            {
+                isDashingDown = false;
             }
 
             // Wall Jumps
@@ -345,10 +387,14 @@ public class PlayerController : MonoBehaviour
     {
         if (!canJump)
         {
-            if (collision.otherCollider == wallBumpL || collision.otherCollider == wallBumpR)
+            if ((collision.otherCollider == wallBumpL && canWallRun) || (collision.otherCollider == wallBumpR && canWallRun))
+            {
+                WallRun();
+            }
+            else if(collision.otherCollider == wallBumpL || collision.otherCollider == wallBumpR)
             {
                 WallStop();
-            }  
+            }
         }
     }
 
@@ -388,6 +434,9 @@ public class PlayerController : MonoBehaviour
             canWallJumpR = false;
 
             lastCol = collision.collider;
+            canDashRight = true;
+            canDashLeft = true;
+            canDashDown = true;
         }
 
         if (canJump)
@@ -449,6 +498,11 @@ public class PlayerController : MonoBehaviour
     public void WallStop()
     {
         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * wallJumpRatio);
+    }
+
+    public void WallRun()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, wallRunSpeed);
     }
 
 }

@@ -15,7 +15,8 @@ public class EnemySplit : MonoBehaviour
     public float range;
 
     [SerializeField] GameObject enemyGO;
-   GameObject enemySpawn;
+    GameObject enemySpawn;
+    public GameObject Explosion;
 
     private Transform target;
     public Vector3 newTargetPos;
@@ -43,10 +44,9 @@ public class EnemySplit : MonoBehaviour
         
         if (inRange)
         {
-                MoveInCombat();
-            grandmaAnimator.SetBool("Walk", true);
+             MoveInCombat();
+             grandmaAnimator.SetBool("Walk", true);
         }
-        //Invoke("SplitEnemy",1f);
     }
 
     void RangeCheck()
@@ -73,10 +73,10 @@ public class EnemySplit : MonoBehaviour
         {
             if (!isCreated)
             {
-                grandmaAnimator.SetTrigger("Split");
                 isCreated = true;
-                enemySpawn = Instantiate(enemyGO, transform.position, Quaternion.identity);
+                enemySpawn = Instantiate(enemyGO, this.transform.position, Quaternion.identity);
                 enemySpawn.transform.Translate(Vector2.up * Time.deltaTime);
+                Destroy(gameObject);
             }
         }
 
@@ -90,7 +90,19 @@ public class EnemySplit : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
-                boundries = new Vector2(collision.collider.bounds.min.x, collision.collider.bounds.max.x);
+            boundries = new Vector2(collision.collider.bounds.min.x, collision.collider.bounds.max.x);
+        }
+        else
+        {
+            GameManager.instance.phd.GetHit(collision.otherCollider);
+            Instantiate(Explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+        if (!collision.gameObject.CompareTag("Floor"))
+        {
+            Instantiate(Explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 

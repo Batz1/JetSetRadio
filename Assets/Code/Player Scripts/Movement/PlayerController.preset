@@ -54,6 +54,10 @@ Preset:
     value: 6
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: airSpeed
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: turningSpeed
     value: 30
     objectReference: {fileID: 0}
@@ -80,6 +84,10 @@ Preset:
   - target: {fileID: 0}
     propertyPath: dashDownSpeed
     value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: fallMultiplier
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: jumpPressTime
@@ -118,11 +126,27 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: wallRunSpeed
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canWallRun
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wallRunCooldownTimer
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: canJump
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: canDoubleJump
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isDoubleJumping
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
@@ -151,6 +175,10 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: canDashDown
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: isDashingDown
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}

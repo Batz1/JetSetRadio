@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4989545712080751270}
   m_Layer: 0
   m_Name: GrambotBroken
-  m_TagString: Untagged
+  m_TagString: Grandma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 7687790322217918092}
   m_Layer: 0
   m_Name: GramobotRightHalf1
-  m_TagString: Untagged
+  m_TagString: Grandma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,6 +148,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  resetCanvas: {fileID: 8828093350320004344, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
+    type: 3}
+  Explosion: {fileID: 182690731443858882, guid: cd2e3ce3da014024dab589653721e438,
+    type: 3}
 --- !u!50 &6114652921064579778
 Rigidbody2D:
   serializedVersion: 4
@@ -163,7 +167,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -211,7 +215,7 @@ GameObject:
   - component: {fileID: 6709443771937837818}
   m_Layer: 0
   m_Name: GramobotLeftHalf1
-  m_TagString: Untagged
+  m_TagString: Grandma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,6 +315,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -10
+  resetCanvas: {fileID: 8828093350320004344, guid: e0f0df50d2ed74b4d87fbe264f180c2e,
+    type: 3}
+  Explosion: {fileID: 182690731443858882, guid: cd2e3ce3da014024dab589653721e438,
+    type: 3}
 --- !u!61 &7494307353452158959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -352,7 +360,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
